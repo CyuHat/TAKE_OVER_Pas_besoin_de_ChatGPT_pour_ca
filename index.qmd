@@ -93,6 +93,18 @@ Pour le bon déroulement du cours, sachez que:
 
 # Qu'est-ce que ChatGPT ? (30 minutes)
 
+## À quoi ressemble ChatGPT? {auto-animate="true"}
+
+À ça?
+
+[![Écran d'accueil de ChatGPT](figure/chatgpt_intro_screen.webp){fig-align="center"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fedunow.me%2Ftechnology%2Fwhat-is-chatgpt-google-search-the-beginning-of-the-end%2F&psig=AOvVaw2CpVpSHTK5Ew6-rZyFNB6T&ust=1739142622038000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjktaaZtYsDFQAAAAAdAAAAABAE)
+
+## À quoi ressemble ChatGPT? {auto-animate="true"}
+
+Probablement à ça...
+
+![Illustration de severs](figure/Microsoft-Windows-Server-2025-kommt.jpg){fig-align="center"}
+
 ## Qu'est-ce que l'intelligence artificielle (IA) ? {auto-animate="true"}
 
 ::: {layout-ncol="2"}
@@ -132,7 +144,7 @@ Pour le bon déroulement du cours, sachez que:
 
 Tuto linux... non c'est une blague!
 
-## Aperçu de l'écosystème de l'IA
+## Brève histoire de l'IA
 
 ### L'IA : un vaste champ d'application
 
@@ -275,20 +287,346 @@ Tuto linux... non c'est une blague!
 :::
 :::::
 
-## À quoi ressemble ChatGPT? {auto-animate="true"}
+## Pour plus de détails sur l'histoire de l'intelligence artificielle
 
-À ça?
+[IA assistant: méthode, pratique et éthique](https://cyuhat.github.io/ai_assistant/)
 
-[![Écran d'accueil de ChatGPT](figure/chatgpt_intro_screen.webp){fig-align="center"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fedunow.me%2Ftechnology%2Fwhat-is-chatgpt-google-search-the-beginning-of-the-end%2F&psig=AOvVaw2CpVpSHTK5Ew6-rZyFNB6T&ust=1739142622038000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjktaaZtYsDFQAAAAAdAAAAABAE)
+## Problème de vie privée
 
-## À quoi ressemble ChatGPT? {auto-animate="true"}
+https://hai.stanford.edu/news/privacy-ai-era-how-do-we-protect-our-personal-information
 
-Probablement à ça...
+https://www.ibm.com/think/insights/ai-privacy
 
-![Illustration de severs](figure/Microsoft-Windows-Server-2025-kommt.jpg){fig-align="center"}
+https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722
+
+## Problème environnemental
+
+## Préoccupations environnementales
+
+### Consommation d'énergie et émissions de carbone :
+
+-   **Utilisation massive d'énergie** : Les modèles d'IA, en particulier les large language models (LLM), nécessitent une puissance de calcul importante et consomment de grandes quantités d'électricité.
+-   **Empreinte carbone** : La formation de grands modèles d'IA peut émettre des centaines de tonnes de CO2. Par exemple, la formation du GPT-3 d'OpenAI a émis environ **500 tonnes de CO2**​.
+-   **Croissance exponentielle** : À mesure que les modèles d'IA deviennent plus avancés, leurs besoins en énergie doublent environ tous les 3 - 4 mois​.
+
+------------------------------------------------------------------------
+
+### Eau et déchets électroniques:
+
+-   **Centres de données** : Les modèles d'IA nécessitent un refroidissement important, ce qui entraîne une consommation d'eau considérable.
+-   D'ici 2027, les centres de données liés à l'IA pourraient consommer **quatre fois l'utilisation annuelle d'eau du Danemark** pour le refroidissement.
+-   La dépendance de l'IA à l'égard du matériel informatique contribue aux **déchets électroniques**, qui peuvent nuire à l'environnement.
+
+[![](figure/environnement.PNG)](https://news.google.com/read/CBMi0wFBVV95cUxNVTFWZHQ2bEJvMDhqRlNGenR6SmdNNlM1cjExOHREYmM1STZjSGp2R0c2QzRKTWxsNkFoSlktekdjbjVLc0pHSUs5MEFiRE5MbEVWOW1iempCWExoRWVLeTJIRGVDbW9YZE9UeWpYUWJIcGVlRkVzLXozajdWNzNyaFJJd0dmNGx4V0FRNVQwM2w4VzNQVUtMVkVvMjdYOXFmdDQ5NlJScXdUa251U3g5MHpHc0E0SFVtbFJXcFRsRDFPX3h4TEpUakFFV01ZYm1fX2dn?hl=fr&gl=FR&ceid=FR%3Afr)
+
+## Problème éthique
+
+## L'IA et le monopole des entreprises
+
+### Monopole du pouvoir de l'IA :
+
+-   Le développement de l'IA est **dominé par quelques géants de la technologie** tels que OpenAI, Google, Microsoft et Amazon. **Et Nvidia!**
+    -   Trop cher pour n'importe qui d'autres (infrastructure et énergie)
+-   Ces entreprises contrôlent les **données, les ressources et l'infrastructure** nécessaires au développement de modèles d'IA avancés, ce qui leur confère un contrôle monopolistique.
+-   Ce monopole rend la **concurrence difficile pour les petites entreprises ou les initiatives open-source**, étouffant ainsi l'innovation et la diversité dans ce domaine.
+    -   Ces initiatives existent tout de même grâce au modèle open source de Facebook (Llama)
+
+------------------------------------------------------------------------
+
+[![](figure/nvidia_shovel.png){fig-align="center" width="600"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fanalyticsindiamag.com%2Fai-origins-evolution%2Fnvidia-sells-gpus-not-shovels%2F&psig=AOvVaw0XSt0BMsfWUhD0hwaVSQFL&ust=1728784302931000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCODf2Mndh4kDFQAAAAAdAAAAABAR)
+
+## La bulle financière de l'IA
+
+### Surinvestissement dans l'IA :
+
+-   L'afflux rapide des **investissements dans l'IA** a fait craindre une bulle financière.
+-   Les **institutions financières** investissent massivement dans les technologies de l'IA pour gagner en efficacité, mais il existe des risques.
+
+### Risque de bulle :
+
+-   À l'instar de la **bulle Internet** du début des années 2000, de nombreux projets d'IA sont surestimés et ne s'appuient pas sur des modèles commerciaux réels et durables.
+-   Les **gains à court terme** de l'IA pourraient conduire à un effondrement si la technologie ne donne pas les résultats escomptés, ce qui aurait un impact sur les **marchés financiers** et les économies.
+
+## Limites Résumé
+
+## Limites des LLM
+
+-   **Coûts** : Ces modèles ont besoin d'une [grande puissance de calcule]{.underline} pour les entraîner et les utiliser. Seules [des grandes entreprises]{.underline} peuvent se lancer dans leur création.
+
+    -   Cependant, il existe des projets [open-source]{.underline} et [locaux]{.underline} mais qui ne sont pas aussi puissants que des modèles comme ChatGPT ou Claud (Llama, Mixtral, Phi, etc.)
+
+-   **Développement** : Jusqu'à présent, la principale stratégie employée a simplement consisté à [augmenter la taille des modèles, des données et des infrastructures]{.underline}, sans apporter de changements majeurs au modèle lui-même.
+
+## Limites des LLM
+
+-   **Hallucination et précision** : Ces modèles ont également tendance à [répondre avec beaucoup d'assurance des choses fausses]{.underline} ou [qui n'ont rien à voir avec le sujet]{.underline}. Bien que cela puisse sembler être un bug ou quelque chose d'inattendu, ce n'est en fait pas surprenant : [ces modèles ont été entraînés à prédire le mot suivant, et non à répondre correctement]{.underline}.
+
+    -   Il existe également un [biais de confiance]{.underline}, car lors de la [phase d'annotation humaine]{.underline}, les réponses plus sûres ont tendance à être plus appréciées (biais cognitif).
+
+## Limites des LLM
+
+-   **Sécurité** : Comme les modèles ne sont pas codés à la main avec des règles, [leur comportement ne peut être prédit]{.underline}, d'où la nécessité d'une [validation humaine]{.underline} pour réduire les réponses problématiques (censure). Cependant, il est [impossible de prévoir tous les cas]{.underline} et, très souvent, des personnes trouvent un moyen de détourner les modèles.
+
+    -   Solution: [données de meilleures qualités]{.underline} (garbage-in, garbage-out)
+
+[![](figure/chatgpt_detournement.PNG){fig-align="center"}](https://www.zdnet.fr/actualites/chatgpt-est-deja-detourne-pour-ecrire-des-logiciels-malveillants-39952280.htm)
+
+## Limites des LLM
+
+-   **Mise à jour** : Leurs connaissances sont figées dans le temps après la formation. Il existe cependant des moyens de les mettre à jour en les connectant à Internet ou en basant leurs réponses sur des documents spécifiques (RAG).
+
+[![](figure/rag.png){fig-align="center" width="783"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2Fgenerative-ai-augmented-recovery-generation-rag-its-data-sampaio-oll2f&psig=AOvVaw2dVAa8O8qI33G9qzT973_8&ust=1728769104820000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCNj0poGlh4kDFQAAAAAdAAAAABAE)
+
+## Limites des LLM
+
+**Autres** :
+
+-   Copyright (contenu volé)
+
+-   Manque de mémoire à long terme (basé sur leur "token window")
+
+-   Limites du raisonnement complexe (réglée avec GPT o1?)
+
+-   Manque de représentativité dans les langues
+
+-   Biais culturels
+
+-   Risque de confidentialité (OpenAI stock et utilisent les conversations)
+
+-   Limitation multimodal (réglée avec GPT-4o et o1)
+
+-   ...
+
 
 # Alternatives Viables ? (35 minutes)
 
+```{r}
+# TODO: Ajouter duckduck go, thereisaniaforthat, deepseek, qwen groq, groK, montrer les IAs que j'utilise (perplexity, Quillbot, Elicit, GitHub copilot)
+```
+
+
+## Introduction : Pourquoi explorer les alternatives à ChatGPT?
+
+-   Bien que **ChatGPT** soit un modèle d'IA populaire, plusieurs autres alternatives offrent des caractéristiques et des améliorations uniques. De plus, les problèmes suivant doivent être mentionnés:
+    -   **Confidentialité** : Stocke les conversations et les utilise pour former le modèle.
+    -   **Utilisation** : Généraliste, ne convient pas à toutes les utilisations
+    -   **Droit d'auteur** : a volé de nombreux contenus en ligne
+    
+## L'univers des options
+
+... liste
+
+```{r}
+# TODO: commencé par les compétiteurs de OpenAI, puis thereisanaiforthat, puis ceux ceux que j'utilise (sans les locaux)
+```
+
+
+## 1) Copilot (anciennement Bing AI)
+
+<https://www.bing.com/chat>
+
+1.  **Information en temps réel** : Contrairement à ChatGPT, Copilot est connecté à Internet, fournissant des données à jour et des événements actuels.
+2.  **Intégration de la recherche sur le web** : Copilot peut effectuer des recherches sur le web et résumer les résultats.
+3.  **Génération d'images** : Alimenté par **DALL-E**, il peut générer des images à partir d'invites textuelles.
+4.  **Traitement des données visuelles** : Les utilisateurs peuvent télécharger des images et recevoir des informations ou des analyses à leur sujet.
+
+## 2) Gemini
+
+<https://gemini.google.com/app>
+
+1.  **Capacités multimodales** : Gemini gère le texte, les images, l'audio et la vidéo​.
+2.  **Meilleures performances** : Surpasse le GPT-4 dans les tests de référence liés à la compréhension et au raisonnement linguistiques multitâches.
+3.  **Capacités de codage avancées** : Excelle dans les tâches liées au code, fournissant des résultats plus précis.
+
+## 3) Claude
+
+<https://claude.ai/login?returnTo=%2F%3F>
+
+1.  **Fenêtre contextuelle plus longue** : Claude peut mémoriser et traiter des conversations beaucoup plus longues (jusqu'à 100 000 mots).
+2.  **Forme formation éthique** : Conçu pour gérer les problèmes éthiques et refuser les demandes inappropriées.
+3.  **Persistance à la tâche** : Meilleure capacité à suivre des instructions complexes en plusieurs étapes.
+
+[**Il faut un compte**]{style="color: red;"}
+
+## 4) Perplexity AI
+
+<https://www.perplexity.ai/>
+
+1.  **Information en temps réel** : Fournit des données en temps réel en effectuant des recherches sur le web.
+2.  **Multiples modèles** : Utilise GPT-4, Claude 3 et Gemini Pro, ce qui permet aux utilisateurs de sélectionner différents modèles pour diverses tâches.
+3.  **Citations de sources** : Fournit des citations pour toutes ses informations, améliorant ainsi la transparence.
+
+## Huggingface space
+
+<https://huggingface.co/spaces>
+
+1.  **Déploiement facile** : Permet aux utilisateurs de créer et de partager rapidement des démos d'IA.
+2.  **Intégration** : Accès direct à l'écosystème du modèle Hugging Face.
+3.  **Collaboration** : Offre des outils de contrôle de version et de collaboration pour les équipes.
+
+## LMStudio :
+
+<https://lmstudio.ai/>
+
+-   **Exécution locale de modèles** : Permet aux utilisateurs d'exécuter des modèles d'IA localement sans dépendre de services en ligne.
+-   **Convivialité** : Fournit une interface graphique pour la gestion des modèles.
+-   **Confidentialité** : Toutes les données sont conservées au niveau local, ce qui garantit une sécurité et une confidentialité accrues.
+
+## Ollama :
+
+<https://ollama.com/>
+
+-   **Exécution locale de modèles** : Permet aux utilisateurs d'exécuter des modèles d'IA localement sans dépendre de services en ligne.
+-   **Confidentialité** : Toutes les données sont conservées au niveau local, ce qui garantit une sécurité et une confidentialité accrues.
+-   **Interface de ligne de commande** : Fournit un outil simple et léger pour exécuter des modèles localement​.
+-   **Personnalisation** : Permet aux utilisateurs de créer et de modifier des modèles personnalisés pour des besoins spécifiques.
+
+## Résumé : choisir la bonne alternative
+
+-   **Copilot** excelle dans l'information en temps réel et l'intégration web.
+-   **Gemini** offre de solides capacités multimodales et une expertise en matière de codage.
+-   **Claude** offre des considérations éthiques et une mémoire plus longue.
+-   **Perplexité** associe des informations en temps réel à des citations de sources.
+-   **Hugging Face Spaces**, **LMStudio**, et **Ollama** offrent des solutions d'IA flexibles et locales pour les utilisateurs soucieux de leur vie privée.
+
 # Ollama et compagnie (20 minutes)
 
+```{r}
+# TODO: Parler de LMStudio 
+```
+
+
 # Ollama pratique (90 minutes)
+
+# Que sont les Large Language Models (LLM)?
+
+## Que sont les large language models (LLM) ?
+
+-   Les **LLM** sont un type d'intelligence artificielle (IA) capable de [comprendre]{.underline} et de [générer du texte]{.underline}.
+-   Ils permettent à des outils comme ChatGPT de créer des réponses, de compléter des phrases et même de tenir des conversations.
+
+### Comment les LLMs génèrent du texte ? :
+
+1.  Les LLM [prédisent la suite d'une phrase]{.underline}.
+2.  Ils sont formés en utilisant de vastes [quantités de données]{.underline} textuelles provenant de livres, de sites Web, etc.
+3.  Ils fonctionnent en [générant un mot à la fois]{.underline}, sur la base des mots précédents.
+
+## Comment fonctionnent les LLM?
+
+Les LLM sont basés sur le modèle de **transformer**, qui se compose de :
+
+-   **Encoder** : [Apprend]{.underline} à partir du texte d'entrée.
+
+-   **Décodeur** : [Prédit]{.underline} le mot suivant en utilisant les données encodées.
+
+**Création du premier GPT** (**Generative Pre-trained Transformer)**
+
+-   Ces modèles **transformer** servaient [de base à la traduction]{.underline} mais ont vu leur usage s'élargir à la génération de texte
+
+-   Au lieu de leur donner un texte d'une langue A à traduire dans la langue B, on utilise uniquement le **décodeur** pour [prédire le prochain mot]{.underline}
+
+## Comment un LLM apprend-il ?
+
+En tant que modèle de machine learning, le modèle a besoin d'apprendre en premier lieu.
+
+**1 - Phase d'entraînement** (avant la sortie du modèle) :
+
+-   Le modèle lit et analyse de [grandes quantités de texte]{.underline}.
+-   Il apprend des données [la façon dont les mots sont utilisés ensemble]{.underline}, tout comme les humains apprennent en lisant des livres ou en écoutant des conversations.
+
+![](figure/ml_rule.png){fig-align="center"}
+
+------------------------------------------------------------------------
+
+**2 - Phase d'annotation/censure**:
+
+-   Comme les [données]{.underline} stockées ne sont [pas filtrées]{.underline}, il y a du [contenu problématique]{.underline} ou qui sont tout simplement [inacceptable]{.underline}.
+-   Pour éviter que le modèle ne produise quoi que ce soit, nous avons besoin [d'humains pour valider les réponses et guider le modèle]{.underline}.
+
+[![](figure/human_feedback.jpg){fig-align="center" width="479"}](https://time.com/6247678/openai-chatgpt-kenya-workers/)
+
+------------------------------------------------------------------------
+
+**3 - Phase de prédiction** (après l’entraînement) :
+
+-   Après l'entraînement, le modèle [prédit le mot suivant]{.underline} dans une phrase [en se basant sur les mots qui le précèdent]{.underline}.
+
+[![](gif/word_prediction.gif){fig-align="center" width="800"}](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+------------------------------------------------------------------------
+
+## Comment les LLM génèrent-ils du texte ?
+
+### Exemple : Rédaction d'une histoire
+
+1.  **Entrée** : L'utilisateur commence par une phrase : "Il était une fois..."
+2.  **Prédiction** : Le LLM prédit le mot suivant dans l'histoire en [choisissant le mot le plus probable]{.underline} sur la base de ce qu'il a appris.
+3.  **Répétition** : Il continue à prédire et à ajouter des mots jusqu'à ce que l'histoire soit complète.
+
+[![](gif/word_prediction.gif){fig-align="center" width="533"}](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+------------------------------------------------------------------------
+
+## La tokenisation : Découpage du texte en morceaux
+
+-   Les LLM ne traitent pas des phrases entières en une seule fois. Au lieu de cela, ils [décomposent le texte en plus petits morceaux]{.underline} appelés **tokens**.
+-   Les tokens peuvent être: des mots entiers, [des parties de mots]{.underline} ou des signes de ponctuation
+
+[![](gif/tokens.gif){fig-align="center" width="621"}](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+------------------------------------------------------------------------
+
+## Embedding : Comprendre le sens des nombres
+
+-   Chaque mot est converti en **vecteur**, qui est une [liste de nombres représentant la signification du mot]{.underline}.
+-   Les mots ayant des [significations similaires]{.underline} (par exemple, "chat" et "chien") auront des [vecteurs proches]{.underline} les uns des autres dans cet espace.
+-   Ces vecteurs aident le LLM à comprendre le [contexte]{.underline} et la [relation entre les mots]{.underline}.
+
+[![](gif/embedding.gif){fig-align="center" width="533"}](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+------------------------------------------------------------------------
+
+## Attention : Comment les LLM comprennent le contexte
+
+-   L'**attention** est le mécanisme clé qui aide les LLM à [se concentrer sur les mots importants]{.underline} d'une phrase.
+-   Par exemple, dans la phrase "Le chat s'est assis sur le tapis", l'attention aide le modèle à savoir que "chat" et "assis" sont liés.
+-   Cela permet au modèle de générer un texte [plus précis]{.underline} et [plus pertinent]{.underline}.
+
+[![](gif/embedding_attention.gif){fig-align="center"}](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+------------------------------------------------------------------------
+
+## Comment un LLM utilise-t-il l'attention ?
+
+1.  Il examine tous les [tokens]{.underline} d'une phrase.
+2.  Il décide quels mots sont les [plus importants]{.underline} pour prédire le mot suivant.
+3.  Il [actualise sa compréhension]{.underline} de chaque mot en fonction du [contexte]{.underline} des autres mots.
+
+[![](gif/weight_update.gif){fig-align="center"}](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+------------------------------------------------------------------------
+
+## Le résultat final : Choix du mot suivant
+
+-   Après avoir traité les tokens et appliqué l'attention, le LLM produit une [liste de mots suivants possibles]{.underline}, chacun avec une [probabilité]{.underline}.
+-   [Le mot ayant la probabilité la plus élevée est choisi]{.underline}, et ce processus se répète pour générer plus de texte.
+
+[![](gif/word_prediction_2.gif){fig-align="center" width="799"}](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+## Pourquoi les LLM sont-ils si puissants ?
+
+1.  **Échelle** : Les LLM comme le GPT-3 ont été entraînés sur de [grandes quantités de texte]{.underline} (livre, forums, internet, etc.), ce qui leur donne une [compréhension]{.underline} profonde du langage.
+2.  **Adaptabilité** : Ils peuvent gérer une [grande variété de tâches]{.underline}, en partant de la réponse à des questions jusqu'à la rédaction d'histoires ou le codage.
+3.  **Créativité** : En prédisant un mot à la fois, les LLM peuvent générer des réponses [étonnamment cohérentes et créatives]{.underline}.
+
+------------------------------------------------------------------------
+
+## Applications des LLM
+
+Les LLM sont utilisés dans différents domaines :
+
+-   **Chatbots** et assistants virtuels (ChatGPT, OpenAI; Copilot, Microsoft; Gemini, Google)
+
+-   **Assistance au code** (GitHub copilot, Microsoft)
+
+-   etc.
