@@ -1,0 +1,294 @@
+---
+title: "Pas besoin de ChatGPT pour ça"
+authors:
+  - name: "Hategekimana Vestin" 
+    affiliation: "Université de Genève"
+    email: "vestin.hategekimana@unige.ch"
+format: 
+  clean-revealjs:
+    transition: slide
+    logo: figure/wedata_logo.png
+    auto-animate: true
+  docx: default
+  beamer:
+    theme: "Dove"
+editor: visual
+---
+
+# Présentation
+
+## Qui suis-je?
+
+![](figure/pp.jpeg){width="100"}
+
+### Vestin Hategekimana
+
+-   Assistant-doctorant en démographie (IDESO)
+
+    -   Institut de démographie et de socioéconomie (UNIGE)
+
+-   Migration et Mobilité en Suisse en temps de crise
+
+-   Passionné par les sciences des données (computational social sciences)
+
+## WeData
+
+![](figure/wedata_logo.png){width="100"}
+
+> "Des stats et du code!"
+
+*Groupe étudiant ayant une passion pour le code et les statistiques: cours et contenu!*
+
+-   Notre site: <https://wedata.ch/>
+-   Notre chaîne YouTube: [WeData](https://www.youtube.com/channel/UCGktdbvbc_H-JEkYYTvwRVw)
+-   Linkedin/Instagram/Facebook: @wedata_unige
+
+## Questions d'introduction
+
+-   Qui êtes-vous? (nom et activité)
+-   Votre expérience avec l'IA?
+-   Que pensez-vous de l'IA?
+-   Pourquoi avoir choisi ce cours?
+
+## Pour ce cours
+
+::: callout-note
+Pour le bon déroulement du cours, sachez que:
+
+1.  Je suis un amateur passionné
+
+2.  C'est mon premier cours dans une université populaire
+
+3.  C'est la première fois que j'enseigne le sujet
+
+4.  Ce n'est pas un cours formel
+
+5.  Vous pouvez partir à n'importe quel moment
+
+6.  Vous pouvez m'interrompre si vous avez une question
+:::
+
+## Objectifs du cours :
+
+-   Acquérir un vocabulaire propre au domaine des LLMs (Large Language Models)
+-   Comprendre les limitations des grands modèles comme ChatGPT et leurs alternatives
+-   Comprendre les avantages des modèles locaux
+-   Savoir utiliser les modèles locaux (installation, system prompt, RAG, huggingface, etc.)
+
+## Plan du cours
+
+-   Qu'est-ce que ChatGPT ? (30 minutes)
+
+-   Alternatives Viables ? (35 minutes)
+
+-   Ollama et compagnie (20 minutes)
+
+-   Ollama pratique (90 minutes)
+
+# Avant de commencer, téléchargeons Ollama!
+
+## Lien vers Ollama
+
+### https://ollama.com/
+
+# Qu'est-ce que ChatGPT ? (30 minutes)
+
+## Qu'est-ce que l'intelligence artificielle (IA) ? {auto-animate="true"}
+
+::: {layout-ncol="2"}
+[![](figure/chatgpt_election.PNG){width="400"}](https://www.bfmtv.com/tech/intelligence-artificielle/chat-gpt-est-aussi-utilise-pour-tenter-d-influencer-les-elections_AV-202410100528.html)
+
+[![](figure/tesla_musk_1.PNG){width="1105"}](https://www.leparisien.fr/high-tech/sans-volant-ni-pedales-a-quoi-ressemble-le-robotaxi-de-tesla-presente-par-musk-11-10-2024-5HC7HOVIAJGALBQBZMINTVLG6U.php)
+
+[![](figure/prix_nobel_physique.PNG){width="1575"}](https://www.francetvinfo.fr/internet/intelligence-artificielle/prix-nobel-de-physique-nous-n-avons-jamais-cotoye-quelque-chose-de-plus-intelligent-que-nous-s-inquiete-le-laureat-geoffrey-hinton_6827603.html)
+
+[![](figure/ia_remplacement.PNG){width="838"}](https://www.lebigdata.fr/enquete-ia-impact-emploi)
+:::
+
+## Qu'est-ce que l'intelligence artificielle (IA) ? {auto-animate="true"}
+
+-   **Définition simple** : L'IA est un modèle informatique ayant pour but **d'imiter l'intelligence humaine**.
+-   Il existe différents types d'IA, allant de **l'IA étroite** (spécialisée dans une tâche spécifique) à **l'IA générale** (capable d'effectuer n'importe quelle tâche intellectuelle humaine), bien que cette dernière reste encore théorique.
+
+[![](figure/brain_ai.jpg){fig-align="center" width="450"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fincubator.ucf.edu%2Fwhat-is-artificial-intelligence-ai-and-why-people-should-learn-about-it%2F&psig=AOvVaw3esR4J2xLdtEc3Ngn-TxqW&ust=1728757950712000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCOjrrbP7hokDFQAAAAAdAAAAABAE)
+
+## Top des companies dans l'IA generative
+
+1.  **OpenAI** : ChatGPT (GPT-3.5, GPT-4, GPT-4o, o1, o3), Dall-E, Sora
+2.  **Google** : PaLM, Bard, Gemini, Gemma, Imagen
+3.  **Meta** : Llama (2, 3, 3.1, 3.2), codeLlama
+4.  **Anthropic** : Claude (2, 3 haiku, 3 sonnet, 3 opus, 3.5 sonnet)
+5.  **Microsoft** : Bing AI, Copilot, GitHub Copilot
+
+[![](figure/ai_leadin_company.png){fig-align="center" width="599"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thinkers360.com%2F50-thought-leading-companies-on-artificial-intelligence-2023%2F&psig=AOvVaw2cerBJcmJB3GxVpoZTPF38&ust=1728758206562000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCMiOnq78hokDFQAAAAAdAAAAABAE)
+
+# Avant de continuer, installons Qwen2.5!
+
+## Ouvrez le terminal!
+
+[Tuto Widows](https://lecrabeinfo.net/tutoriels/ouvrir-et-utiliser-le-terminal-windows-sur-windows-11-10/)
+
+[Tuto Mac](https://support.apple.com/fr-fr/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac)
+
+Tuto linux... non c'est une blague!
+
+## Aperçu de l'écosystème de l'IA
+
+### L'IA : un vaste champ d'application
+
+::::: columns
+::: {.column width="50%"}
+```{=html}
+<svg width="500" xmlns="http://www.w3.org/2000/svg" height="500" id="screenshot-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" viewBox="162 124 285 286" style="-webkit-print-color-adjust::exact" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1">
+<style>
+  </style>
+<g id="shape-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" data-testid="Group" rx="0" ry="0"> <-- IA rectangle --> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a72f05a74" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a72f05a74"> <rect rx="25" ry="25" x="162" y="124" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="285" height="285" style="fill:#f354cb;fill-opacity:1"> </rect> </g> </g> <-- Machine Learning rectnagle --> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a9b88e6a7" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a9b88e6a7"> <rect rx="25" ry="25" x="189" y="152" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="258" height="258" style="fill:#549df3;fill-opacity:1"> </rect> </g> </g> <-- Deep Learning rectnagle --> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6ab3ff09f6" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6ab3ff09f6"> <rect rx="25" ry="25" x="217.00000000000003" y="180" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="229.99999999999994" height="230" style="fill:#48f9f9;fill-opacity:1"> </rect> </g> </g> <-- IA générative rectangle --> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6aea98cc51" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6aea98cc51"> <rect rx="25" ry="25" x="244" y="206" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="203" height="203" style="fill:#f9f748;fill-opacity:1"> </rect> </g> </g> <-- IA label --> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd" data-testid="Intelligence Artificielle"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="180" y="128" width="200" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="180" y="128" width="199.5" height="27.519996643066406" id="fill-0-render-38-0"> <g> <rect width="199.5" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd"> <text x="180" y="153.59999668598175" dominant-baseline="ideographic" textLength="199.5" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Intelligence Artificielle</text> </g> </g> </g> <-- Machine learning label --> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b6785ee98" data-testid="Machine Learning"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="200" y="156" width="157" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="200" y="156" width="156.00997924804688" height="27.519996643066406" id="fill-0-render-39-0"> <g> <rect width="156.00997924804688" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b6785ee98"> <text x="200" y="181.59999668598175" dominant-baseline="ideographic" textLength="156.00997924804688" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Machine Learning</text> </g> </g> </g> <-- Deep learning label --> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b78567d4a" data-testid="Deep Learning"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="230" y="184" width="127" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="230" y="184" width="126.89998626708984" height="27.519996643066406" id="fill-0-render-40-0"> <g> <rect width="126.89998626708984" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b78567d4a"> <text x="230" y="209.59999668598175" dominant-baseline="ideographic" textLength="126.89998626708984" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Deep Learning</text> </g> </g> </g> <-- générative IA label --> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b98a4ed79" data-testid="IA Générative"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="259" y="212" width="119" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="259" y="212" width="118.39998626708984" height="27.519996643066406" id="fill-0-render-41-0"> <g> <rect width="118.39998626708984" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b98a4ed79"> <text x="259" y="237.59999668598175" dominant-baseline="ideographic" textLength="118.39998626708984" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">IA Générative</text> </g> </g> </g> </g>
+
+</svg>
+```
+:::
+
+::: {.column width="50%"}
+-   L'intelligence artificielle (IA) est le domaine général de la création de machines capables d'effectuer des tâches qui requièrent généralement l'intelligence humaine.
+-   L'IA comporte plusieurs sous-domaines, dont **l'apprentissage machine (Machine Learning ou ML)** et **l'apprentissage profond (Deep Learning ou DL)**.
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## L'écosystème de l'IA : Composants clés {auto-animate="true"}
+
+::::: columns
+::: {.column width="50%"}
+```{=html}
+<svg width="500" xmlns="http://www.w3.org/2000/svg" height="500" id="screenshot-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" viewBox="162 124 285 286" style="-webkit-print-color-adjust::exact" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1">
+
+<style>
+  </style>
+
+<g id="shape-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" data-testid="Group" rx="0" ry="0"> \<-- IA rectangle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a72f05a74" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a72f05a74"> <rect rx="25" ry="25" x="162" y="124" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="285" height="285" style="fill:#f354cb;fill-opacity:1"> </rect> </g> </g> \<-- IA label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd" data-testid="Intelligence Artificielle"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="180" y="128" width="200" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="180" y="128" width="199.5" height="27.519996643066406" id="fill-0-render-38-0"> <g> <rect width="199.5" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd"> <text x="180" y="153.59999668598175" dominant-baseline="ideographic" textLength="199.5" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Intelligence Artificielle</text> </g> </g> </g> </g>
+
+</svg>
+```
+:::
+
+::: {.column width="50%"}
+1.  **Intelligence artificielle (IA)** : Le vaste domaine qui englobe toutes les capacités des "machines intelligentes".
+    -   Tâches : Résolution de problèmes, perception, prise de décision.
+:::
+:::::
+
+## L'écosystème de l'IA : Composants clés {auto-animate="true"}
+
+::::: columns
+::: {.column width="50%"}
+```{=html}
+<svg width="500" xmlns="http://www.w3.org/2000/svg" height="500" id="screenshot-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" viewBox="162 124 285 286" style="-webkit-print-color-adjust::exact" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1">
+
+<style>
+  </style>
+
+<g id="shape-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" data-testid="Group" rx="0" ry="0"> \<-- IA rectangle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a72f05a74" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a72f05a74"> <rect rx="25" ry="25" x="162" y="124" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="285" height="285" style="fill:#f354cb;fill-opacity:1"> </rect> </g> </g> \<-- Machine Learning rectnagle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a9b88e6a7" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a9b88e6a7"> <rect rx="25" ry="25" x="189" y="152" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="258" height="258" style="fill:#549df3;fill-opacity:1"> </rect> </g> </g> \<-- IA label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd" data-testid="Intelligence Artificielle"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="180" y="128" width="200" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="180" y="128" width="199.5" height="27.519996643066406" id="fill-0-render-38-0"> <g> <rect width="199.5" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd"> <text x="180" y="153.59999668598175" dominant-baseline="ideographic" textLength="199.5" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Intelligence Artificielle</text> </g> </g> </g> \<-- Machine learning label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b6785ee98" data-testid="Machine Learning"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="200" y="156" width="157" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="200" y="156" width="156.00997924804688" height="27.519996643066406" id="fill-0-render-39-0"> <g> <rect width="156.00997924804688" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b6785ee98"> <text x="200" y="181.59999668598175" dominant-baseline="ideographic" textLength="156.00997924804688" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Machine Learning</text> </g> </g> </g> </g>
+
+</svg>
+```
+:::
+
+::: {.column width="50%"}
+2.  **Apprentissage machine (ML)** : Sous-domaine de l'IA dans lequel les machines apprennent à partir de [données]{.underline} et améliorent leurs performances au fil du temps.
+    -   Exemple : Filtres anti-spam, prédiction financière ou actuarielle
+
+[![](figure/ml_rule.png){fig-align="center"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2F0liverFlow%2FHandwritingRecognition&psig=AOvVaw1NLm_iyJfurBj9aIBcJ0v3&ust=1728758701700000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCKC44aH-hokDFQAAAAAdAAAAABAE)
+:::
+:::::
+
+## L'écosystème de l'IA : Composants clés {auto-animate="true"}
+
+::::: columns
+::: {.column width="50%"}
+```{=html}
+<svg width="500" xmlns="http://www.w3.org/2000/svg" height="500" id="screenshot-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" viewBox="162 124 285 286" style="-webkit-print-color-adjust::exact" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1">
+
+<style>
+  </style>
+
+<g id="shape-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" data-testid="Group" rx="0" ry="0"> \<-- IA rectangle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a72f05a74" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a72f05a74"> <rect rx="25" ry="25" x="162" y="124" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="285" height="285" style="fill:#f354cb;fill-opacity:1"> </rect> </g> </g> \<-- Machine Learning rectnagle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a9b88e6a7" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a9b88e6a7"> <rect rx="25" ry="25" x="189" y="152" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="258" height="258" style="fill:#549df3;fill-opacity:1"> </rect> </g> </g> \<-- Deep Learning rectnagle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6ab3ff09f6" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6ab3ff09f6"> <rect rx="25" ry="25" x="217.00000000000003" y="180" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="229.99999999999994" height="230" style="fill:#48f9f9;fill-opacity:1"> </rect> </g> </g> \<-- IA label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd" data-testid="Intelligence Artificielle"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="180" y="128" width="200" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="180" y="128" width="199.5" height="27.519996643066406" id="fill-0-render-38-0"> <g> <rect width="199.5" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd"> <text x="180" y="153.59999668598175" dominant-baseline="ideographic" textLength="199.5" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Intelligence Artificielle</text> </g> </g> </g> \<-- Machine learning label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b6785ee98" data-testid="Machine Learning"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="200" y="156" width="157" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="200" y="156" width="156.00997924804688" height="27.519996643066406" id="fill-0-render-39-0"> <g> <rect width="156.00997924804688" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b6785ee98"> <text x="200" y="181.59999668598175" dominant-baseline="ideographic" textLength="156.00997924804688" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Machine Learning</text> </g> </g> </g> \<-- Deep learning label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b78567d4a" data-testid="Deep Learning"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="230" y="184" width="127" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="230" y="184" width="126.89998626708984" height="27.519996643066406" id="fill-0-render-40-0"> <g> <rect width="126.89998626708984" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b78567d4a"> <text x="230" y="209.59999668598175" dominant-baseline="ideographic" textLength="126.89998626708984" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Deep Learning</text> </g> </g> </g> </g>
+
+</svg>
+```
+:::
+
+::: {.column width="50%"}
+3.  **Apprentissage en profondeur (DL)** : Un sous-ensemble spécialisé de l'intelligence artificielle utilisant des [réseaux neuronaux]{.underline} avec de nombreuses couches pour traiter des données complexes.
+    -   Exemple : systèmes de reconnaissance d'images
+
+[![](figure/multilayer_neural_network.png){fig-align="center" width="318"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fartificial-neural-networks-and-its-applications%2F&psig=AOvVaw1-I58z59oKvtqSGWz_5B6H&ust=1728758990750000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCMiAiKD_hokDFQAAAAAdAAAAABAE)
+:::
+:::::
+
+## L'écosystème de l'IA : Composants clés {auto-animate="true"}
+
+::::: columns
+::: {.column width="50%"}
+```{=html}
+<svg width="500" xmlns="http://www.w3.org/2000/svg" height="500" id="screenshot-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" viewBox="162 124 285 286" style="-webkit-print-color-adjust::exact" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1">
+
+<style>
+  </style>
+
+<g id="shape-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" data-testid="Group" rx="0" ry="0"> \<-- IA rectangle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a72f05a74" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a72f05a74"> <rect rx="25" ry="25" x="162" y="124" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="285" height="285" style="fill:#f354cb;fill-opacity:1"> </rect> </g> </g> \<-- Machine Learning rectnagle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a9b88e6a7" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a9b88e6a7"> <rect rx="25" ry="25" x="189" y="152" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="258" height="258" style="fill:#549df3;fill-opacity:1"> </rect> </g> </g> \<-- Deep Learning rectnagle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6ab3ff09f6" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6ab3ff09f6"> <rect rx="25" ry="25" x="217.00000000000003" y="180" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="229.99999999999994" height="230" style="fill:#48f9f9;fill-opacity:1"> </rect> </g> </g> \<-- IA générative rectangle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6aea98cc51" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6aea98cc51"> <rect rx="25" ry="25" x="244" y="206" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="203" height="203" style="fill:#f9f748;fill-opacity:1"> </rect> </g> </g> \<-- IA label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd" data-testid="Intelligence Artificielle"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="180" y="128" width="200" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="180" y="128" width="199.5" height="27.519996643066406" id="fill-0-render-38-0"> <g> <rect width="199.5" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd"> <text x="180" y="153.59999668598175" dominant-baseline="ideographic" textLength="199.5" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Intelligence Artificielle</text> </g> </g> </g> \<-- Machine learning label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b6785ee98" data-testid="Machine Learning"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="200" y="156" width="157" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="200" y="156" width="156.00997924804688" height="27.519996643066406" id="fill-0-render-39-0"> <g> <rect width="156.00997924804688" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b6785ee98"> <text x="200" y="181.59999668598175" dominant-baseline="ideographic" textLength="156.00997924804688" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Machine Learning</text> </g> </g> </g> \<-- Deep learning label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b78567d4a" data-testid="Deep Learning"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="230" y="184" width="127" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="230" y="184" width="126.89998626708984" height="27.519996643066406" id="fill-0-render-40-0"> <g> <rect width="126.89998626708984" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b78567d4a"> <text x="230" y="209.59999668598175" dominant-baseline="ideographic" textLength="126.89998626708984" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Deep Learning</text> </g> </g> </g> \<-- générative IA label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b98a4ed79" data-testid="IA Générative"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="259" y="212" width="119" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="259" y="212" width="118.39998626708984" height="27.519996643066406" id="fill-0-render-41-0"> <g> <rect width="118.39998626708984" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b98a4ed79"> <text x="259" y="237.59999668598175" dominant-baseline="ideographic" textLength="118.39998626708984" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">IA Générative</text> </g> </g> </g> </g>
+
+</svg>
+```
+:::
+
+::: {.column width="50%"}
+4.  **Intelligence artificielle générative (Gen AI** ou **GAI) :** Les systèmes d'intelligence artificielle capables de [créer un contenu]{.underline} original tel que [du texte]{.underline}, [des images]{.underline}, [du son]{.underline}, [de la vidéo]{.underline} ou [du code]{.underline} en réponse à des invites ou à des demandes.
+    -   Exemple : Dall-E (image), Sora (Vidéo) ou ChatGPT (Texte)
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## L'écosystème de l'IA : Composants clés {auto-animate="true"}
+
+::::: columns
+::: {.column width="50%"}
+```{=html}
+<svg width="500" xmlns="http://www.w3.org/2000/svg" height="500" id="screenshot-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" viewBox="162 124 285 286" style="-webkit-print-color-adjust::exact" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1">
+
+<style>
+  </style>
+
+<g id="shape-ab84bb9a-2f00-80b7-8005-1a6e26dd9d28" data-testid="Group" rx="0" ry="0"> \<-- IA rectangle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a72f05a74" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a72f05a74"> <rect rx="25" ry="25" x="162" y="124" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="285" height="285" style="fill:#f354cb;fill-opacity:1"> </rect> </g> </g> \<-- Machine Learning rectnagle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6a9b88e6a7" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6a9b88e6a7"> <rect rx="25" ry="25" x="189" y="152" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="258" height="258" style="fill:#549df3;fill-opacity:1"> </rect> </g> </g> \<-- Deep Learning rectnagle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6ab3ff09f6" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6ab3ff09f6"> <rect rx="25" ry="25" x="217.00000000000003" y="180" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="229.99999999999994" height="230" style="fill:#48f9f9;fill-opacity:1"> </rect> </g> </g> \<-- IA générative rectangle --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6aea98cc51" data-testid="Rectangle"> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6aea98cc51"> <rect rx="25" ry="25" x="244" y="206" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" width="203" height="203" style="fill:#f9f748;fill-opacity:1"> </rect> </g> </g> \<-- IA label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd" data-testid="Intelligence Artificielle"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="180" y="128" width="200" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="180" y="128" width="199.5" height="27.519996643066406" id="fill-0-render-38-0"> <g> <rect width="199.5" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b1b744cdd"> <text x="180" y="153.59999668598175" dominant-baseline="ideographic" textLength="199.5" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Intelligence Artificielle</text> </g> </g> </g> \<-- Machine learning label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b6785ee98" data-testid="Machine Learning"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="200" y="156" width="157" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="200" y="156" width="156.00997924804688" height="27.519996643066406" id="fill-0-render-39-0"> <g> <rect width="156.00997924804688" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b6785ee98"> <text x="200" y="181.59999668598175" dominant-baseline="ideographic" textLength="156.00997924804688" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Machine Learning</text> </g> </g> </g> \<-- Deep learning label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b78567d4a" data-testid="Deep Learning"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="230" y="184" width="127" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="230" y="184" width="126.89998626708984" height="27.519996643066406" id="fill-0-render-40-0"> <g> <rect width="126.89998626708984" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b78567d4a"> <text x="230" y="209.59999668598175" dominant-baseline="ideographic" textLength="126.89998626708984" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">Deep Learning</text> </g> </g> </g> \<-- générative IA label --\> <g id="shape-ab84bb9a-2f00-80b7-8005-1a6b98a4ed79" data-testid="IA Générative"> <g transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="text-container" x="259" y="212" width="119" height="24" rx="0" ry="0"> <defs> <pattern patternUnits="userSpaceOnUse" x="259" y="212" width="118.39998626708984" height="27.519996643066406" id="fill-0-render-41-0"> <g> <rect width="118.39998626708984" height="27.519996643066406" style="fill:#000000;fill-opacity:1"> </rect> </g> </pattern> </defs> <g class="fills" id="fills-ab84bb9a-2f00-80b7-8005-1a6b98a4ed79"> <text x="259" y="237.59999668598175" dominant-baseline="ideographic" textLength="118.39998626708984" lengthAdjust="spacingAndGlyphs" style="text-transform:none;font-family:sourcesanspro;letter-spacing:normal;font-style:normal;font-weight:700;white-space:pre;font-size:20px;text-decoration:none solid rgb(0, 0, 0);direction:ltr;fill:#000000;fill-opacity:1">IA Générative</text> </g> </g> </g> </g>
+
+</svg>
+```
+:::
+
+::: {.column width="50%"}
+5.  **Large language model (LLM)** : Un sous-domaine de l'IA génératieve axé sur les tâches liées au [langage naturel (texte)]{.underline}.
+    -   Tâches: [Résumé]{.underline}, [production]{.underline}, [classification]{.underline}, [traduction]{.underline} et [correction]{.underline} de texte
+    -   Exemple : Modèles GPT comme ChatGPT.
+
+[![](figure/chatgpt.png){fig-align="center" width="125"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmetricool.com%2Fchatgpt%2F&psig=AOvVaw10vd1jOvzY2EpSNsZIgFWI&ust=1728759274327000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCPiMt6aAh4kDFQAAAAAdAAAAABAE)
+:::
+:::::
+
+## À quoi ressemble ChatGPT? {auto-animate="true"}
+
+À ça?
+
+[![Écran d'accueil de ChatGPT](figure/chatgpt_intro_screen.webp){fig-align="center"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fedunow.me%2Ftechnology%2Fwhat-is-chatgpt-google-search-the-beginning-of-the-end%2F&psig=AOvVaw2CpVpSHTK5Ew6-rZyFNB6T&ust=1739142622038000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjktaaZtYsDFQAAAAAdAAAAABAE)
+
+## À quoi ressemble ChatGPT? {auto-animate="true"}
+
+Probablement à ça...
+
+![Illustration de severs](figure/Microsoft-Windows-Server-2025-kommt.jpg){fig-align="center"}
+
+# Alternatives Viables ? (35 minutes)
+
+# Ollama et compagnie (20 minutes)
+
+# Ollama pratique (90 minutes)
