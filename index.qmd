@@ -387,13 +387,19 @@ randonnées suisse
 
 dépression symptômes
 
-## Solution
+## Avoir des conversations complète  c'est encore pire...
+
+  ![](figure/chat_history.jpg)
+
+## Solution pour les moteurs de recherche
 
 Utiliser des moteurs de recherche qui garantissent la vie privée
 
 [duckduckgo](https://duckduckgo.com/)
 
 [brave](https://search.brave.com/)
+
+**Pour ChatGPT nous présenterons des alternatives plus tard dans le cours**
 
 ## Problème environnemental
 
@@ -418,6 +424,10 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 ![](figure/stargate.webp)
 
 ## Problème éthique
+
+- Monopole
+
+- Bulle financière
 
 ## L'IA et le monopole des entreprises
 
@@ -446,6 +456,12 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 -   Les **gains à court terme** de l'IA pourraient conduire à un effondrement si la technologie ne donne pas les résultats escomptés, ce qui aurait un impact sur les **marchés financiers** et les économies.
 
 ## Autres limites
+
+- Coût
+- Développement
+- Hallucination
+- Sécurité
+- Mise à jour
 
 ## Limites des LLM
 
@@ -530,6 +546,8 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 3.  **Persistance à la tâche** : Meilleure capacité à suivre des instructions complexes en plusieurs étapes.
 
 ## 4) DeepSeek
+
+<https://www.deepseek.com/>
 
 1. **Coût réduit** : Le développement de DeepSeek a coûté environ 5,58 millions de dollars, soit 20 à 40 fois moins que ChatGPT15. Cette efficacité économique se traduit par des tarifs plus abordables pour les utilisateurs.
 2. **Efficacité énergétique** : DeepSeek nécessite 10 fois moins de puissance de calcul que ChatGPT, ce qui réduit considérablement son empreinte écologique
@@ -921,7 +939,24 @@ Utilisons une interface utilisateur: **Page Assist**
 
 ## Choisir ses modèle(s)
 
+Taille de la VRAM
 
+![](figure/vram_size.jpg)
+
+## Où choisir ses modèles
+
+[ollama](https://ollama.com/search)
+
+[huggingface](https://huggingface.co/models)
+
+- Task: Text generation
+- Libraries: GGUF
+
+## Quelques benchmarks
+
+[GPU Poor LLM Arena](https://huggingface.co/spaces/k-mktr/gpu-poor-llm-arena)
+
+[Open LLM Leader Dashboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)
 
 ## System prompt
 
@@ -1098,6 +1133,7 @@ Réponse finale :
 ```
 
 **Réponse attendue** :
+
   - Étape 1 : $$3 + 5 = 8$$
   - Étape 2 : $$8 \times 2 = 16$$
   - Réponse finale : $$16$$
@@ -1121,11 +1157,9 @@ Pour éviter d'écrire des promptes (message) systématiquement, créer des syst
 **Nous allons faire une exemple de dictionnaire des synonymes:**
 
 - **But:** Lorsque nous écrivons un mot le modèle nous renvoie une lsite de synonymes
-- **utilité:** Évite de devoir réécrire le prompte à chaque fois
+- **Utilité:** Évite de devoir réécrire le prompte à chaque fois
 
-## Astuce pour un system prompt
-
-Un peu de conseil de prompting:
+## Astuces pour les prompts
 
 1. Les llms sont des acteurs: **Donner un rôle aide à accomplir le travail**
 2. Les llms sont des prédicteurs de tokens: **Le contexte a une grande importance**
@@ -1139,7 +1173,8 @@ Un peu de conseil de prompting:
 
 - Créer une application de correction de text et de synthaxe
 - Créer une application de traduction
-- Créer une applicaiton pour répondre aux emails
+- Créer une applicaiton pour répondre aux emails (modèle)
+- Trouver d'autres idées d'applications
 
 ## RAG
 

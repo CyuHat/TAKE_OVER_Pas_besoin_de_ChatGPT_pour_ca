@@ -802,11 +802,16 @@ Hategekimana Vestin
 <p>randonnées suisse</p>
 <p>dépression symptômes</p>
 </section>
-<section id="solution" class="slide level2">
-<h2>Solution</h2>
+<section id="avoir-des-conversations-complète-cest-encore-pire" class="slide level2">
+<h2>Avoir des conversations complète c’est encore pire…</h2>
+
+<img data-src="figure/chat_history.jpg" class="r-stretch"></section>
+<section id="solution-pour-les-moteurs-de-recherche" class="slide level2">
+<h2>Solution pour les moteurs de recherche</h2>
 <p>Utiliser des moteurs de recherche qui garantissent la vie privée</p>
 <p><a href="https://duckduckgo.com/">duckduckgo</a></p>
 <p><a href="https://search.brave.com/">brave</a></p>
+<p><strong>Pour ChatGPT nous présenterons des alternatives plus tard dans le cours</strong></p>
 </section>
 <section id="problème-environnemental" class="slide level2">
 <h2>Problème environnemental</h2>
@@ -833,6 +838,10 @@ Hategekimana Vestin
 <img data-src="figure/stargate.webp" class="r-stretch"></section>
 <section id="problème-éthique" class="slide level2">
 <h2>Problème éthique</h2>
+<ul>
+<li><p>Monopole</p></li>
+<li><p>Bulle financière</p></li>
+</ul>
 </section>
 <section id="lia-et-le-monopole-des-entreprises" class="slide level2">
 <h2>L’IA et le monopole des entreprises</h2>
@@ -872,6 +881,13 @@ Hategekimana Vestin
 </section>
 <section id="autres-limites" class="slide level2">
 <h2>Autres limites</h2>
+<ul>
+<li>Coût</li>
+<li>Développement</li>
+<li>Hallucination</li>
+<li>Sécurité</li>
+<li>Mise à jour</li>
+</ul>
 </section>
 <section id="limites-des-llm" class="slide level2">
 <h2>Limites des LLM</h2>
@@ -983,6 +999,7 @@ Hategekimana Vestin
 </section>
 <section id="deepseek" class="slide level2">
 <h2>4) DeepSeek</h2>
+<p><a href="https://www.deepseek.com/" class="uri">https://www.deepseek.com/</a></p>
 <ol type="1">
 <li><strong>Coût réduit</strong> : Le développement de DeepSeek a coûté environ 5,58 millions de dollars, soit 20 à 40 fois moins que ChatGPT15. Cette efficacité économique se traduit par des tarifs plus abordables pour les utilisateurs.</li>
 <li><strong>Efficacité énergétique</strong> : DeepSeek nécessite 10 fois moins de puissance de calcul que ChatGPT, ce qui réduit considérablement son empreinte écologique</li>
@@ -1394,6 +1411,22 @@ Hategekimana Vestin
 </section>
 <section id="choisir-ses-modèles" class="slide level2">
 <h2>Choisir ses modèle(s)</h2>
+<p>Taille de la VRAM</p>
+
+<img data-src="figure/vram_size.jpg" class="r-stretch"></section>
+<section id="où-choisir-ses-modèles" class="slide level2">
+<h2>Où choisir ses modèles</h2>
+<p><a href="https://ollama.com/search">ollama</a></p>
+<p><a href="https://huggingface.co/models">huggingface</a></p>
+<ul>
+<li>Task: Text generation</li>
+<li>Libraries: GGUF</li>
+</ul>
+</section>
+<section id="quelques-benchmarks" class="slide level2">
+<h2>Quelques benchmarks</h2>
+<p><a href="https://huggingface.co/spaces/k-mktr/gpu-poor-llm-arena">GPU Poor LLM Arena</a></p>
+<p><a href="https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/">Open LLM Leader Dashboard</a></p>
 </section>
 <section id="system-prompt" class="slide level2">
 <h2>System prompt</h2>
@@ -1564,7 +1597,12 @@ Français :</code></pre>
   - Multipliez ensuite le résultat par 2.
   
 Réponse finale :</code></pre>
-<p><strong>Réponse attendue</strong> : - Étape 1 : <span class="math display">\[3 + 5 = 8\]</span> - Étape 2 : <span class="math display">\[8 \times 2 = 16\]</span> - Réponse finale : <span class="math display">\[16\]</span></p>
+<p><strong>Réponse attendue</strong> :</p>
+<ul>
+<li>Étape 1 : <span class="math display">\[3 + 5 = 8\]</span></li>
+<li>Étape 2 : <span class="math display">\[8 \times 2 = 16\]</span></li>
+<li>Réponse finale : <span class="math display">\[16\]</span></li>
+</ul>
 </section>
 <section id="des-idées-de-prompt" class="slide level2">
 <h2>Des idées de prompt</h2>
@@ -1585,12 +1623,11 @@ Réponse finale :</code></pre>
 <p><strong>Nous allons faire une exemple de dictionnaire des synonymes:</strong></p>
 <ul>
 <li><strong>But:</strong> Lorsque nous écrivons un mot le modèle nous renvoie une lsite de synonymes</li>
-<li><strong>utilité:</strong> Évite de devoir réécrire le prompte à chaque fois</li>
+<li><strong>Utilité:</strong> Évite de devoir réécrire le prompte à chaque fois</li>
 </ul>
 </section>
-<section id="astuce-pour-un-system-prompt" class="slide level2">
-<h2>Astuce pour un system prompt</h2>
-<p>Un peu de conseil de prompting:</p>
+<section id="astuces-pour-les-prompts" class="slide level2">
+<h2>Astuces pour les prompts</h2>
 <ol type="1">
 <li>Les llms sont des acteurs: <strong>Donner un rôle aide à accomplir le travail</strong></li>
 <li>Les llms sont des prédicteurs de tokens: <strong>Le contexte a une grande importance</strong></li>
@@ -1606,7 +1643,8 @@ Réponse finale :</code></pre>
 <ul>
 <li>Créer une application de correction de text et de synthaxe</li>
 <li>Créer une application de traduction</li>
-<li>Créer une applicaiton pour répondre aux emails</li>
+<li>Créer une applicaiton pour répondre aux emails (modèle)</li>
+<li>Trouver d’autres idées d’applications</li>
 </ul>
 </section>
 <section id="rag" class="slide level2">
