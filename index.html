@@ -1103,8 +1103,8 @@ Hategekimana Vestin
 </ul>
 
 <img data-src="figure/slm_performance.jpg" class="r-stretch"></section>
-<section id="compariason" class="slide level2">
-<h2>Compariason</h2>
+<section id="comparaison" class="slide level2">
+<h2>Comparaison</h2>
 
 <img data-src="figure/llm_vs_slm.webp" class="r-stretch"></section></section>
 <section>
@@ -1318,7 +1318,7 @@ Hategekimana Vestin
 
 <img data-src="figure/terminal.png" class="r-stretch"></section>
 <section id="commandes-de-base" class="slide level2">
-<h2>COmmandes de base</h2>
+<h2>Commandes de base</h2>
 <p>Aide</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href=""></a>ollama help</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Équivalent</p>
@@ -1355,15 +1355,294 @@ Hategekimana Vestin
 <section id="exercice" class="slide level2">
 <h2>Exercice</h2>
 <ul>
-<li>Tester le modèle</li>
+<li>Tester le modèle pour différente tâches</li>
+<li>Chercher d’autres modèle sur la page des modèles de <a href="https://ollama.com/search">ollama</a></li>
+<li>Durant le téléchargement vous pouvez aller tester les autres alternatives:
+<ul>
+<li><a href="https://theresanaiforthat.com/">There is an AI for that</a></li>
+<li><a href="https://duckduckgo.com/">Duckduckgo AI</a></li>
+<li><a href="https://huggingface.co/spaces">HuggingFace Space</a></li>
+</ul></li>
+<li>Tester les nouveaux modèles téléchargés</li>
 </ul>
+<p>Exemple de tâche: question de culture générale, question mathématique, synonyme, formulation, etc.</p>
+</section>
+<section id="votre-avis-sur-lexpérience-dutilisation" class="slide level2">
+<h2>Votre avis sur l’expérience d’utilisation?</h2>
+</section>
+<section id="gui-pageassist" class="slide level2">
+<h2>GUI: PageAssist</h2>
+<p>Utilisons une interface utilisateur: <strong>Page Assist</strong></p>
+<ul>
+<li><a href="https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo">Chrome</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/page-assist/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search">FireFox</a></li>
+</ul>
+<p><em>Le lien chrome fonctionne aussi pour: Brave, Vivaldi, Edge et Opera</em></p>
+<p><em>Les navigateurs suivants sont aussi disponibles: LibreWolf, Zen Browser et Arc</em></p>
+<p><strong>Page Assist est très simple à installer et à utiliser</strong></p>
+</section>
+<section id="page-assist" class="slide level2">
+<h2>Page Assist</h2>
+<p>À faire:</p>
+<ul>
+<li>Épingler Page Assist</li>
+<li>Tester des conversations</li>
+<li>Tester des modèles + Gestion des modèles (paramètres)</li>
+<li>Exporter les chats</li>
+<li>Naviguer dans les chats</li>
+</ul>
+</section>
+<section id="choisir-ses-modèles" class="slide level2">
+<h2>Choisir ses modèle(s)</h2>
+</section>
+<section id="system-prompt" class="slide level2">
+<h2>System prompt</h2>
+<p><strong>Système Prompt (System Prompt)</strong> : Instruction spéciale définissant le comportement global du modèle.</p>
+<p>Le système prompt établit les règles et cadre de l’interaction avec le modèle, transformant GPT en chatbots spécialisés adaptés à diverses situations.</p>
+</section>
+<section id="structure-dun-system-prompt" class="slide level2">
+<h2>Structure d’un system prompt</h2>
+<p><strong>Structure d’un system prompt classique:</strong></p>
+<ul>
+<li><strong>Définition du rôle</strong>: Spécifie le domaine d’expertise (medecin, enseignant, etc.).</li>
+<li><strong>Établissement de règles</strong>: Définir les limites pour la protection des informations sensibles.</li>
+<li><strong>Personnalisation du ton</strong>: Style de communication (formel, amical, professionnel).</li>
+<li><strong>Contextualisation</strong>: Fournit le contexte basique pour toutes les réponses.</li>
+</ul>
+</section>
+<section id="chatgpt-4o-system-prompt" class="slide level2 scrollable">
+<h2>ChatGPT-4o system prompt</h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href=""></a>You are ChatGPT, a large language model trained by OpenAI, based on the GPT-4 architecture.</span>
+<span id="cb12-2"><a href=""></a>Knowledge cutoff: 2023-10</span>
+<span id="cb12-3"><a href=""></a>Current date: 2024-07-10</span>
+<span id="cb12-4"><a href=""></a></span>
+<span id="cb12-5"><a href=""></a>Image input capabilities: Enabled</span>
+<span id="cb12-6"><a href=""></a>Personality: v2</span>
+<span id="cb12-7"><a href=""></a></span>
+<span id="cb12-8"><a href=""></a><span class="fu"># Tools</span></span>
+<span id="cb12-9"><a href=""></a></span>
+<span id="cb12-10"><a href=""></a><span class="fu">## bio</span></span>
+<span id="cb12-11"><a href=""></a></span>
+<span id="cb12-12"><a href=""></a>The <span class="in">`bio`</span> tool allows you to persist information across conversations. Address your message <span class="in">`to=bio`</span> and write whatever information you want to remember. The information will appear in the model set context below in future conversations.</span>
+<span id="cb12-13"><a href=""></a></span>
+<span id="cb12-14"><a href=""></a><span class="fu">## dalle</span></span>
+<span id="cb12-15"><a href=""></a></span>
+<span id="cb12-16"><a href=""></a>// Whenever a description of an image is given, create a prompt that dalle can use to generate the image and abide to the following policy:</span>
+<span id="cb12-17"><a href=""></a>// 1. The prompt must be in English. Translate to English if needed.</span>
+<span id="cb12-18"><a href=""></a>// 2. DO NOT ask for permission to generate the image, just do it!</span>
+<span id="cb12-19"><a href=""></a>// 3. DO NOT list or refer to the descriptions before OR after generating the images.</span>
+<span id="cb12-20"><a href=""></a>// 4. Do not create more than 1 image, even if the user requests more.</span>
+<span id="cb12-21"><a href=""></a>// 5. Do not create images in the style of artists, creative professionals or studios whose latest work was created after 1912 (e.g. Picasso, Kahlo).</span>
+<span id="cb12-22"><a href=""></a>// - You can name artists, creative professionals or studios in prompts only if their latest work was created prior to 1912 (e.g. Van Gogh, Goya)</span>
+<span id="cb12-23"><a href=""></a>// - If asked to generate an image that would violate this policy, instead apply the following procedure: (a) substitute the artist's name with three adjectives that capture key aspects of the style; (b) include an associated artistic movement or era to provide context; and (c) mention the primary medium used by the artist</span>
+<span id="cb12-24"><a href=""></a>// 6. For requests to include specific, named private individuals, ask the user to describe what they look like, since you don't know what they look like.</span>
+<span id="cb12-25"><a href=""></a>// 7. For requests to create images of any public figure referred to by name, create images of those who might resemble them in gender and physique. But they shouldn't look like them. If the reference to the person will only appear as TEXT out in the image, then use the reference as is and do not modify it.</span>
+<span id="cb12-26"><a href=""></a>// 8. Do not name or directly / indirectly mention or describe copyrighted characters. Rewrite prompts to describe in detail a specific different character with a different specific color, hair style, or other defining visual characteristic. Do not discuss copyright policies in responses.</span>
+<span id="cb12-27"><a href=""></a>// The generated prompt sent to dalle should be very detailed, and around 100 words long.</span>
+<span id="cb12-28"><a href=""></a>// Example dalle invocation:</span>
+<span id="cb12-29"><a href=""></a>// ```</span>
+<span id="cb12-30"><a href=""></a>// {</span>
+<span id="cb12-31"><a href=""></a>// "prompt": "&lt;insert prompt here&gt;"</span>
+<span id="cb12-32"><a href=""></a>// }</span>
+<span id="cb12-33"><a href=""></a>// ```</span>
+<span id="cb12-34"><a href=""></a>namespace dalle {</span>
+<span id="cb12-35"><a href=""></a></span>
+<span id="cb12-36"><a href=""></a>// Create images from a text-only prompt.</span>
+<span id="cb12-37"><a href=""></a>type text2im = (_: {</span>
+<span id="cb12-38"><a href=""></a>// The size of the requested image. Use 1024x1024 (square) as the default, 1792x1024 if the user requests a wide image, and 1024x1792 for full-body portraits. Always include this parameter in the request.</span>
+<span id="cb12-39"><a href=""></a>size?: ("1792x1024" | "1024x1024" | "1024x1792"),</span>
+<span id="cb12-40"><a href=""></a>// The number of images to generate. If the user does not specify a number, generate 1 image.</span>
+<span id="cb12-41"><a href=""></a>n?: number, // default: 2</span>
+<span id="cb12-42"><a href=""></a>// The detailed image description, potentially modified to abide by the dalle policies. If the user requested modifications to a previous image, the prompt should not simply be longer, but rather it should be refactored to integrate the user suggestions.</span>
+<span id="cb12-43"><a href=""></a>prompt: string,</span>
+<span id="cb12-44"><a href=""></a>// If the user references a previous image, this field should be populated with the gen_id from the dalle image metadata.</span>
+<span id="cb12-45"><a href=""></a>referenced_image_ids?: string[],</span>
+<span id="cb12-46"><a href=""></a>}) =&gt; any;</span>
+<span id="cb12-47"><a href=""></a></span>
+<span id="cb12-48"><a href=""></a>} // namespace dalle</span>
+<span id="cb12-49"><a href=""></a></span>
+<span id="cb12-50"><a href=""></a><span class="fu">## browser</span></span>
+<span id="cb12-51"><a href=""></a></span>
+<span id="cb12-52"><a href=""></a>You have the tool <span class="in">`browser`</span>. Use <span class="in">`browser`</span> in the following circumstances:</span>
+<span id="cb12-53"><a href=""></a><span class="ss">    - </span>User is asking about current events or something that requires real-time information (weather, sports scores, etc.)</span>
+<span id="cb12-54"><a href=""></a><span class="ss">    - </span>User is asking about some term you are totally unfamiliar with (it might be new)</span>
+<span id="cb12-55"><a href=""></a><span class="ss">    - </span>User explicitly asks you to browse or provide links to references</span>
+<span id="cb12-56"><a href=""></a></span>
+<span id="cb12-57"><a href=""></a>Given a query that requires retrieval, your turn will consist of three steps:</span>
+<span id="cb12-58"><a href=""></a><span class="ss">1. </span>Call the search function to get a list of results.</span>
+<span id="cb12-59"><a href=""></a><span class="ss">2. </span>Call the mclick function to retrieve a diverse and high-quality subset of these results (in parallel). Remember to SELECT AT LEAST 3 sources when using <span class="in">`mclick`</span>.</span>
+<span id="cb12-60"><a href=""></a><span class="ss">3. </span>Write a response to the user based on these results. In your response, cite sources using the citation format below.</span>
+<span id="cb12-61"><a href=""></a></span>
+<span id="cb12-62"><a href=""></a>In some cases, you should repeat step 1 twice, if the initial results are unsatisfactory, and you believe that you can refine the query to get better results.</span>
+<span id="cb12-63"><a href=""></a></span>
+<span id="cb12-64"><a href=""></a>You can also open a url directly if one is provided by the user. Only use the <span class="in">`open_url`</span> command for this purpose; do not open urls returned by the search function or found on webpages.</span>
+<span id="cb12-65"><a href=""></a></span>
+<span id="cb12-66"><a href=""></a>The <span class="in">`browser`</span> tool has the following commands:</span>
+<span id="cb12-67"><a href=""></a> <span class="in">`search(query: str, recency_days: int)`</span> Issues a query to a search engine and displays the results.</span>
+<span id="cb12-68"><a href=""></a> <span class="in">`mclick(ids: list[str])`</span>. Retrieves the contents of the webpages with provided IDs (indices). You should ALWAYS SELECT AT LEAST 3 and at most 10 pages. Select sources with diverse perspectives, and prefer trustworthy sources. Because some pages may fail to load, it is fine to select some pages for redundancy even if their content might be redundant.</span>
+<span id="cb12-69"><a href=""></a> <span class="in">`open_url(url: str)`</span> Opens the given URL and displays it.</span>
+<span id="cb12-70"><a href=""></a></span>
+<span id="cb12-71"><a href=""></a>For citing quotes from the 'browser' tool: please render in this format: <span class="in">`【{message idx}†{link text}】`</span>.</span>
+<span id="cb12-72"><a href=""></a>For long citations: please render in this format: <span class="in">`[link text](message idx)`</span>.</span>
+<span id="cb12-73"><a href=""></a>Otherwise do not render links.</span>
+<span id="cb12-74"><a href=""></a></span>
+<span id="cb12-75"><a href=""></a><span class="fu">## python</span></span>
+<span id="cb12-76"><a href=""></a></span>
+<span id="cb12-77"><a href=""></a>When you send a message containing Python code to python, it will be executed in a</span>
+<span id="cb12-78"><a href=""></a>stateful Jupyter notebook environment. python will respond with the output of the execution or time out after 60.0</span>
+<span id="cb12-79"><a href=""></a>seconds. The drive at '/mnt/data' can be used to save and persist user files. Internet access for this session is disabled. Do not make external web requests or API calls as they will fail.</span>
+<span id="cb12-80"><a href=""></a>Use ace_tools.display_dataframe_to_user(name: str, dataframe: pandas.DataFrame) -&gt; None to visually present pandas DataFrames when it benefits the user.</span>
+<span id="cb12-81"><a href=""></a> When making charts for the user: 1) never use seaborn, 2) give each chart its own distinct plot (no subplots), and 3) never set any specific colors – unless explicitly asked to by the user. </span>
+<span id="cb12-82"><a href=""></a> I REPEAT: when making charts for the user: 1) use matplotlib over seaborn, 2) give each chart its own distinct plot (no subplots), and 3) never, ever, specify colors or matplotlib styles – unless explicitly asked to by the user</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="technique-de-prompt" class="slide level2">
+<h2>Technique de prompt</h2>
+<ul>
+<li><strong>Zero-shot</strong>: Instruction simple</li>
+<li><strong>One-shot</strong>: Un exemple</li>
+<li><strong>Few-shot</strong>: Plusieurs exemples</li>
+<li><strong>Chain-of-Thought</strong> (CoT): Pousser le modèle à réfléchir</li>
+</ul>
+</section>
+<section id="zero-shot-prompting" class="slide level2 scrollable">
+<h2>Zero-shot Prompting</h2>
+<ul>
+<li><p><strong>Description</strong> : Cette méthode consiste à donner une instruction ou une tâche au modèle sans fournir d’exemples spécifiques. Le modèle s’appuie uniquement sur ses connaissances préexistantes acquises lors de son entraînement pour répondre.</p></li>
+<li><p><strong>Avantages</strong> : Rapide et efficace pour des tâches simples ou générales. Aucune donnée supplémentaire n’est nécessaire.</p></li>
+<li><p><strong>Exemple</strong> :</p>
+<pre><code>Traduisez le texte suivant en français : "Good morning, how are you?"</code></pre>
+<p><strong>Réponse attendue</strong> : “Bonjour, comment allez-vous ?”</p></li>
+</ul>
+</section>
+<section id="one-shot-prompting" class="slide level2 scrollable">
+<h2>One-shot Prompting</h2>
+<ul>
+<li><strong>Description</strong> : Ici, un seul exemple est fourni avec l’instruction pour aider le modèle à mieux comprendre la tâche ou le format attendu.</li>
+<li><strong>Avantages</strong> : Utile lorsque le modèle a besoin d’un contexte minimal pour produire des réponses plus précises.</li>
+<li><strong>Exemple</strong> :</li>
+</ul>
+<pre><code>Exemple :
+Anglais : I speak French
+Français : Je parle français
+
+Traduisez le texte suivant en français :
+Anglais : Good morning, how are you?
+Français :</code></pre>
+<p><strong>Réponse attendue</strong> : “Bonjour, comment allez-vous ?”</p>
+</section>
+<section id="few-shot-prompting" class="slide level2 scrollable">
+<h2>Few-shot Prompting</h2>
+<ul>
+<li><strong>Description</strong> : Cette méthode implique de fournir plusieurs exemples dans le prompt pour guider le modèle. Cela permet de mieux contextualiser la tâche et d’améliorer la précision des réponses.</li>
+<li><strong>Avantages</strong> : Particulièrement efficace pour les tâches complexes ou spécifiques où des exemples multiples aident à établir un schéma clair.</li>
+<li><strong>Exemple</strong> :</li>
+</ul>
+<pre><code>Exemple 1 :
+Anglais : I speak French
+Français : Je parle français
+
+Exemple 2 :
+Anglais : I love coffee
+Français : J'aime le café
+
+Traduisez le texte suivant en français :
+Anglais : Good morning, how are you?
+Français :</code></pre>
+<p><strong>Réponse attendue</strong> : “Bonjour, comment allez-vous ?”</p>
+</section>
+<section id="chain-of-thought-cot-prompting" class="slide level2 scrollable">
+<h2>Chain-of-Thought (CoT) Prompting</h2>
+<ul>
+<li><strong>Description</strong> : Cette technique demande au modèle de décomposer une tâche complexe en étapes logiques successives. Cela améliore la capacité du modèle à raisonner et à fournir des réponses claires et détaillées.</li>
+<li><strong>Avantages</strong> : Idéal pour les problèmes nécessitant plusieurs étapes de raisonnement ou une explication détaillée. Cela rend également les réponses plus interprétables.</li>
+<li><strong>Exemple</strong> (résolution de problème mathématique) :</li>
+</ul>
+<pre><code>Combien font (3 + 5) × 2 ?
+  
+Étapes :
+  - Additionnez d'abord les nombres entre parenthèses.
+  - Multipliez ensuite le résultat par 2.
+  
+Réponse finale :</code></pre>
+<p><strong>Réponse attendue</strong> : - Étape 1 : <span class="math display">\[3 + 5 = 8\]</span> - Étape 2 : <span class="math display">\[8 \times 2 = 16\]</span> - Réponse finale : <span class="math display">\[16\]</span></p>
+</section>
+<section id="des-idées-de-prompt" class="slide level2">
+<h2>Des idées de prompt</h2>
+<ul>
+<li><a href="https://github.com/0xeb/TheBigPromptLibrary">The Big Prompt Library</a> list une grande variété de promptes utiles</li>
+<li><a href="https://gist.github.com/Maharshi-Pandya/4aeccbe1dbaa7f89c182bd65d2764203">Prompte pour le raisonnement</a> un supper prompte pour simuler un raisonnement dans des modèles sans raisonnements.</li>
+</ul>
+<p><strong>Raisonnement</strong>: Pousse le modèle à réfléchir (générer du texte) avant de répondre. Cela s’appel du <strong>Chain of thought</strong> (CoT).</p>
+<p>Modèle faisant du raisonnement:</p>
+<ul>
+<li><a href="https://ollama.com/library/smallthinker">smallthinker</a></li>
+<li><a href="https://ollama.com/library/deepseek-r1">deepseek-r1</a></li>
+</ul>
+</section>
+<section id="créer-ses-applications" class="slide level2">
+<h2>Créer ses applications</h2>
+<p>Pour éviter d’écrire des promptes (message) systématiquement, créer des systèmes promptes permet de se simplifier la tâche.</p>
+<p><strong>Nous allons faire une exemple de dictionnaire des synonymes:</strong></p>
+<ul>
+<li><strong>But:</strong> Lorsque nous écrivons un mot le modèle nous renvoie une lsite de synonymes</li>
+<li><strong>utilité:</strong> Évite de devoir réécrire le prompte à chaque fois</li>
+</ul>
+</section>
+<section id="astuce-pour-un-system-prompt" class="slide level2">
+<h2>Astuce pour un system prompt</h2>
+<p>Un peu de conseil de prompting:</p>
+<ol type="1">
+<li>Les llms sont des acteurs: <strong>Donner un rôle aide à accomplir le travail</strong></li>
+<li>Les llms sont des prédicteurs de tokens: <strong>Le contexte a une grande importance</strong></li>
+<li>Les llms manquent de sens commun: <strong>Soyez précis dans votre demande</strong></li>
+<li>Les llms savent recopier les structures: <strong>Donnez des exemples concrets</strong></li>
+<li>Les llms modernes ont un grand contexte: <strong>N’hésitez pas à créer de longs prompts détaillés</strong></li>
+<li>Les llms sont bon pour repérer les structures: <strong>Utilisez des caractères spéciaux comme <code>{}</code> pour améliiorer la structure</strong></li>
+<li>Les llms donnerons toujours une réponse même lorsqu’ils ne savent pas: <strong>Donnez des instruction lorsque le modèle ne sait pas</strong></li>
+</ol>
+</section>
+<section id="exercices" class="slide level2">
+<h2>Exercices</h2>
+<ul>
+<li>Créer une application de correction de text et de synthaxe</li>
+<li>Créer une application de traduction</li>
+<li>Créer une applicaiton pour répondre aux emails</li>
+</ul>
+</section>
+<section id="rag" class="slide level2">
+<h2>RAG</h2>
+
+<img data-src="figure/llms_rag.png" class="r-stretch"></section>
+<section id="rag-avec-page-assist" class="slide level2">
+<h2>RAG avec Page Assist</h2>
+<p><strong>Document locaux:</strong></p>
+<ul>
+<li>Paramètre: Gérer les connaissances</li>
+</ul>
+<p><strong>Internet:</strong></p>
+<ul>
+<li><p>Dans la conversation</p></li>
+<li><p>Barre latérale (Ctrl+Maj+Y)</p></li>
+</ul>
+</section>
+<section id="dans-ce-cours-nous-avons-vu" class="slide level2">
+<h2>Dans ce cours nous avons vu…</h2>
+<ul>
+<li>Acquérir un vocabulaire propre au domaine des LLMs (Large Language Models)</li>
+<li>Comprendre les limitations des grands modèles comme ChatGPT et leurs alternatives</li>
+<li>Comprendre les avantages des modèles locaux</li>
+<li>Savoir utiliser les modèles locaux (installation, system prompt, RAG, huggingface, etc.)</li>
+</ul>
+</section></section>
+<section id="merci-pour-votre-attention" class="title-slide slide level1 center">
+<h1>Merci pour votre attention!</h1>
 <div class="quarto-auto-generated-content">
 <p><img src="figure/wedata_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
