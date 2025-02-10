@@ -19,17 +19,19 @@ editor: visual
 
 ## Qui suis-je?
 
-![](figure/pp.jpeg){width="100"}
-
 ### Vestin Hategekimana
+
+.
+
+![](figure/pp.jpeg){.absolute top="0" right="480" width="230"}
 
 -   Assistant-doctorant en démographie (IDESO)
 
-    -   Institut de démographie et de socioéconomie (UNIGE)
+    -   Institut de socioéconomie et de démographie (UNIGE)
 
--   Migration et Mobilité en Suisse en temps de crise
+-   Migration et mobilité en Suisse en temps de crise
 
--   Passionné par les sciences des données (computational social sciences)
+-   Passionné des sciences des données et la programmation (computational social sciences)
 
 ## WeData
 
@@ -57,15 +59,13 @@ Pour le bon déroulement du cours, sachez que:
 
 1.  Je suis un amateur passionné
 
-2.  C'est mon premier cours dans une université populaire
+2.  C'est la première fois que j'enseigne le sujet
 
-3.  C'est la première fois que j'enseigne le sujet
+3.  Ce n'est pas un cours formel
 
-4.  Ce n'est pas un cours formel
+4.  Vous pouvez partir à n'importe quel moment
 
-5.  Vous pouvez partir à n'importe quel moment
-
-6.  Vous pouvez m'interrompre si vous avez une question
+5.  Vous pouvez m'interrompre si vous avez une question
 :::
 
 ## Objectifs du cours :
@@ -143,6 +143,16 @@ Probablement à ça...
 [Tuto Mac](https://support.apple.com/fr-fr/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac)
 
 Tuto linux... non c'est une blague!
+
+## Installez Qwen2.5:3b
+
+Lien: [Qwen2.5:3b](https://ollama.com/library/qwen2.5:3b)
+
+Code:
+
+```bash
+ollama run qwen2.5:3b
+```
 
 ## Brève histoire de l'IA
 
@@ -291,17 +301,101 @@ Tuto linux... non c'est une blague!
 
 [IA assistant: méthode, pratique et éthique](https://cyuhat.github.io/ai_assistant/)
 
+## ChatGPT c'est...
+
+![](figure/openai-logo-freelogovectors.net_-974571776.png)
+
+Un ensemble de modèle de OpenAI qui peut:
+
+1. Créer et traiter du texte
+
+2. Faire de la programmation
+
+3. Créer et traiter des images
+
+4. Créer et traiter du son
+
+En bref, très puissants
+
+## Mais il a des limites:
+
+- Il est parfois incorrect
+
+- Il est imprécis
+
+- Il est consensuel
+
+- Il est biaisé
+
+Mais ce ne sont pas les plus grande limites!
+
+## Les problèmes importants de ChatGPT
+
+1. Ne respecte pas la vie privée
+
+2. Cause des nouveaux défis environementaux
+
+3. Pose de sérieux problèmes ethiques
+
 ## Problème de vie privée
 
-https://hai.stanford.edu/news/privacy-ai-era-how-do-we-protect-our-personal-information
+![](figure/big-data.jpg)
 
-https://www.ibm.com/think/insights/ai-privacy
+- Nous vivons dans une période de bigdata
 
-https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722
+- Les grandes compagnies collectent énormément de données sur nous
+
+- OpenAi collecte les données de conversation pour entraîner ses modèles
+
+## Exemple de google
+
+Comment google track nos données?
+
+1. Historique de recherche
+
+2. Google analytic
+
+## Transparence de la recherche: 
+
+![](figure/google-search.jpg)
+
+**Nos historiques de recherches sont plus transparentes qu'on le croit**
+
+## Un petit jeu: historique de recherche (1)
+
+opticien neuchâtel
+
+unil inscription
+
+coloc lausanne
+
+job étudiant
+
+bourse étude
+
+## Un petit jeu: historique de recherche (2)
+
+tourisme suisse été
+
+notaire liège
+
+hotel nyon
+
+davis cup
+
+randonnées suisse
+
+dépression symptômes
+
+## Solution
+
+Utiliser des moteurs de recherche qui garantissent la vie privée
+
+[duckduckgo](https://duckduckgo.com/)
+
+[brave](https://search.brave.com/)
 
 ## Problème environnemental
-
-## Préoccupations environnementales
 
 ### Consommation d'énergie et émissions de carbone :
 
@@ -318,6 +412,10 @@ https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722
 -   La dépendance de l'IA à l'égard du matériel informatique contribue aux **déchets électroniques**, qui peuvent nuire à l'environnement.
 
 [![](figure/environnement.PNG)](https://news.google.com/read/CBMi0wFBVV95cUxNVTFWZHQ2bEJvMDhqRlNGenR6SmdNNlM1cjExOHREYmM1STZjSGp2R0c2QzRKTWxsNkFoSlktekdjbjVLc0pHSUs5MEFiRE5MbEVWOW1iempCWExoRWVLeTJIRGVDbW9YZE9UeWpYUWJIcGVlRkVzLXozajdWNzNyaFJJd0dmNGx4V0FRNVQwM2w4VzNQVUtMVkVvMjdYOXFmdDQ5NlJScXdUa251U3g5MHpHc0E0SFVtbFJXcFRsRDFPX3h4TEpUakFFV01ZYm1fX2dn?hl=fr&gl=FR&ceid=FR%3Afr)
+
+## Projet stagrate
+
+![](figure/stargate.webp)
 
 ## Problème éthique
 
@@ -347,7 +445,7 @@ https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722
 -   À l'instar de la **bulle Internet** du début des années 2000, de nombreux projets d'IA sont surestimés et ne s'appuient pas sur des modèles commerciaux réels et durables.
 -   Les **gains à court terme** de l'IA pourraient conduire à un effondrement si la technologie ne donne pas les résultats escomptés, ce qui aurait un impact sur les **marchés financiers** et les économies.
 
-## Limites Résumé
+## Autres limites
 
 ## Limites des LLM
 
@@ -385,25 +483,11 @@ https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722
 
 -   Manque de mémoire à long terme (basé sur leur "token window")
 
--   Limites du raisonnement complexe (réglée avec GPT o1?)
-
--   Manque de représentativité dans les langues
-
 -   Biais culturels
 
 -   Risque de confidentialité (OpenAI stock et utilisent les conversations)
 
--   Limitation multimodal (réglée avec GPT-4o et o1)
-
--   ...
-
-
 # Alternatives Viables ? (35 minutes)
-
-```{r}
-# TODO: Ajouter duckduck go, thereisaniaforthat, deepseek, qwen groq, groK, montrer les IAs que j'utilise (perplexity, Quillbot, Elicit, GitHub copilot)
-```
-
 
 ## Introduction : Pourquoi explorer les alternatives à ChatGPT?
 
@@ -414,12 +498,11 @@ https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722
     
 ## L'univers des options
 
-... liste
-
-```{r}
-# TODO: commencé par les compétiteurs de OpenAI, puis thereisanaiforthat, puis ceux ceux que j'utilise (sans les locaux)
-```
-
+- Copilot
+- Gemini
+- Claude
+- DeepSeek
+- Perplexity AI
 
 ## 1) Copilot (anciennement Bing AI)
 
@@ -446,15 +529,51 @@ https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722
 2.  **Forme formation éthique** : Conçu pour gérer les problèmes éthiques et refuser les demandes inappropriées.
 3.  **Persistance à la tâche** : Meilleure capacité à suivre des instructions complexes en plusieurs étapes.
 
-[**Il faut un compte**]{style="color: red;"}
+## 4) DeepSeek
 
-## 4) Perplexity AI
+1. **Coût réduit** : Le développement de DeepSeek a coûté environ 5,58 millions de dollars, soit 20 à 40 fois moins que ChatGPT15. Cette efficacité économique se traduit par des tarifs plus abordables pour les utilisateurs.
+2. **Efficacité énergétique** : DeepSeek nécessite 10 fois moins de puissance de calcul que ChatGPT, ce qui réduit considérablement son empreinte écologique
+3. **Performances comparables** : Malgré son coût réduit, DeepSeek rivalise avec les modèles propriétaires les plus performants en termes de capacités de traitement du langage naturel
+
+## 5) Perplexity AI
 
 <https://www.perplexity.ai/>
 
 1.  **Information en temps réel** : Fournit des données en temps réel en effectuant des recherches sur le web.
 2.  **Multiples modèles** : Utilise GPT-4, Claude 3 et Gemini Pro, ce qui permet aux utilisateurs de sélectionner différents modèles pour diverses tâches.
 3.  **Citations de sources** : Fournit des citations pour toutes ses informations, améliorant ainsi la transparence.
+
+## Bonus (1)
+
+Il y a une IA pour ça:
+
+[There is an AI for that](https://theresanaiforthat.com/)
+
+- liste de nombreuses IA
+- possiblité de filtrer
+- À jour
+
+## Bonus (2)
+
+Autres que j'utilise:
+
+- [Quillbot](https://quillbot.com/)
+- [Elicit](https://elicit.com/)
+
+## Pour la vie privée
+
+- Duckduckgo AI
+- Huggingface space
+- LMStudio
+- Ollama
+
+## duckduckgo AI
+
+<https://duckduckgo.com/>
+
+1. **Accessible**: Gratuit et il suffit d'aller sur le lien
+2. **Privé**: Pas besoin de compte
+3. **Puissant**: Les modèles disponibles sont GPT-4o mini, Lama3.3 70B, Claude 3 Haiku, o3-mini, Mistral 8x7B
 
 ## Huggingface space
 
@@ -487,18 +606,48 @@ https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722
 -   **Gemini** offre de solides capacités multimodales et une expertise en matière de codage.
 -   **Claude** offre des considérations éthiques et une mémoire plus longue.
 -   **Perplexité** associe des informations en temps réel à des citations de sources.
--   **Hugging Face Spaces**, **LMStudio**, et **Ollama** offrent des solutions d'IA flexibles et locales pour les utilisateurs soucieux de leur vie privée.
+-   **Hugging Face Spaces**, **Duckduckgo AI**, **LMStudio**, et **Ollama** offrent des solutions d'IA flexibles et locales pour les utilisateurs soucieux de leur vie privée.
+
+## Modèles locaux solution parfaite?
+
+**Avantages:**
+
+- Confidentialité
+- Impact environmental marginal
+
+**Désavantages:**
+
+- Moins performant que les plus gros modèles (OpenAI, Anthropic, etc.)
+- Demande plus d'apprentissage
+
+## La puissance des SLM
+
+**SLM**: Small Language Models = modèles locaux
+
+![](figure/model_size.png)
+
+## La puissance des SLM
+
+Modèles de plus en plus gros...
+
+![](figure/gpt_size.png)
+
+## Les petits modèles deviennent de plus en plus intelligent
+
+- Les modèles modernes de la taille de GPT2 (1.5B) sont beaucoups plus intelligents
+- On fait plus avec moins (ex. DeepSeek)
+
+![](figure/slm_performance.jpg)
+
+## Compariason
+
+![](figure/llm_vs_slm.webp)
 
 # Ollama et compagnie (20 minutes)
 
-```{r}
-# TODO: Parler de LMStudio 
-```
+## Comment marche un modèle local?
 
-
-# Ollama pratique (90 minutes)
-
-# Que sont les Large Language Models (LLM)?
+Comme un grand modèle...
 
 ## Que sont les large language models (LLM) ?
 
@@ -619,14 +768,145 @@ En tant que modèle de machine learning, le modèle a besoin d'apprendre en prem
 2.  **Adaptabilité** : Ils peuvent gérer une [grande variété de tâches]{.underline}, en partant de la réponse à des questions jusqu'à la rédaction d'histoires ou le codage.
 3.  **Créativité** : En prédisant un mot à la fois, les LLM peuvent générer des réponses [étonnamment cohérentes et créatives]{.underline}.
 
-------------------------------------------------------------------------
+## Ollama, LMStudio, llama.cpp, etc.
 
-## Applications des LLM
+- **Ollama** est idéal pour ceux qui recherchent une solution simple à utiliser avec un support multiplateforme, mais il est limité par la nécessité d'un GPU dédié.
+- **LM Studio** offre une excellente expérience utilisateur et fonctionne hors ligne, mais il est gourmand en ressources matérielles.
+- **llama.cpp** est particulièrement adapté aux systèmes légers ou sans GPU grâce à son optimisation CPU, mais il peut nécessiter des compétences techniques avancées.
 
-Les LLM sont utilisés dans différents domaines :
+## Pourquoi Ollama?
 
--   **Chatbots** et assistants virtuels (ChatGPT, OpenAI; Copilot, Microsoft; Gemini, Google)
+- Facile d'installation
+- Peut s'intégrer par défaut à de nombreux outils (Obsidian, Copilot, etc.)
+- A un très grand [écosystème](https://github.com/ollama/ollama)
 
--   **Assistance au code** (GitHub copilot, Microsoft)
+## GPU et VRAM?
 
--   etc.
+- Le GPU (ou carte graphique) et la VRAM sont indispensables pour l'utilisation des modèles de langage (LLM).
+
+- **Caractéristiques du GPU :**
+   - Spécialisé pour les calculs en parallèle.
+   - Adapté au traitement des réseaux neuronaux profonds.
+   
+- **Rôle et importance de la VRAM :**
+   - Mémoire spécifique pour le stockage rapide de données graphiques.
+   - Cruciale pour stocker les poids des neurones et les données intermédiaires dans les LLM.
+   
+**Pour connaître la puissance de son ordinateur pour les llms, il faut vérifier la VRAM**
+   
+## Vérifier sa VRAM
+
+- [Windows](https://www.howtogeek.com/797643/how-to-find-vram-on-windows-11/)
+
+- [Mac](https://www.mackiev.com/techsupport/ht_vram.html)
+
+- [Linux](https://www.lecoindunet.com/comment-verifier-la-ram-sur-linux)
+
+# Ollama pratique (90 minutes)
+
+## Terminal
+
+- On utilise de base un terminal avec Ollama
+- Il existe des interfaces utilisateurs plus simple
+- Il est improtant de connaitre les commande de base
+
+![](figure/terminal.png)
+
+## COmmandes de base
+
+Aide
+
+```shell
+ollama help
+```
+Équivalent
+
+```shell
+ollama
+```
+Liste des modèles
+
+```shell
+ollama list
+```
+
+Information sur un modèle
+
+```shell
+ollama show qwen2.5:3b
+```
+
+Télécharger un nouveau modèle
+
+```shell
+ollama pull bge-m3
+```
+
+## Exercie
+
+En attendant le que téléchargement soit fini. Vous pouvez tester les alternatives que nous avons présenté plus tôt:
+
+- [There is an AI for that](https://theresanaiforthat.com/)
+- [Duckduckgo AI](https://duckduckgo.com/)
+- [HuggingFace Space](https://huggingface.co/spaces)
+
+Suite: lancer un modèle
+
+```shell
+ollama run qwen2.5:3b
+```
+
+## Dans une conversation
+
+Liste des commandes
+
+```shell
+/?
+```
+
+Infos sur le modèle
+
+```shell
+/show info
+```
+
+Effacer le contexte
+
+```shell
+/clear
+```
+
+Quitter la conversation
+
+```shell
+/bye
+```
+
+## Exercice
+
+- Tester le modèle pour différente tâches
+- Chercher d'autres modèle sur la page des modèles de [ollama](https://ollama.com/search)
+- Durant le téléchargement vous pouvez aller tester les autres alternatives:
+  - [There is an AI for that](https://theresanaiforthat.com/)
+  - [Duckduckgo AI](https://duckduckgo.com/)
+  - [HuggingFace Space](https://huggingface.co/spaces)
+- Tester les nouveaux modèles téléchargés
+
+Exemple de tâche: question de culture générale, question mathématique, synonyme, formulation, etc.
+
+## Votre avis sur l'expérience d'utilisation?
+
+## GUI: PageAssist
+
+Utilisons une interface utilisateur: Page Assist
+
+- [Chrome](https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo)
+- [FireFox](https://addons.mozilla.org/en-US/firefox/addon/page-assist/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+
+*Le lien chrome fonctionne aussi pour: Brave, Vivaldi, Edge, Opera*
+
+## Choisir ses modèle(s)
+
+## RAG
+
+## Prompting

@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -349,15 +414,16 @@ Hategekimana Vestin
 </section>
 <section id="qui-suis-je" class="slide level2">
 <h2>Qui suis-je?</h2>
-
-<img data-src="figure/pp.jpeg" width="100" class="r-stretch"><h3 id="vestin-hategekimana">Vestin Hategekimana</h3>
+<h3 id="vestin-hategekimana">Vestin Hategekimana</h3>
+<p>.</p>
+<p><img data-src="figure/pp.jpeg" class="absolute" style="top: 0px; right: 480px; width: 230px; "></p>
 <ul>
 <li><p>Assistant-doctorant en démographie (IDESO)</p>
 <ul>
-<li>Institut de démographie et de socioéconomie (UNIGE)</li>
+<li>Institut de socioéconomie et de démographie (UNIGE)</li>
 </ul></li>
-<li><p>Migration et Mobilité en Suisse en temps de crise</p></li>
-<li><p>Passionné par les sciences des données (computational social sciences)</p></li>
+<li><p>Migration et mobilité en Suisse en temps de crise</p></li>
+<li><p>Passionné des sciences des données et la programmation (computational social sciences)</p></li>
 </ul>
 </section>
 <section id="wedata" class="slide level2">
@@ -396,7 +462,6 @@ Hategekimana Vestin
 <p>Pour le bon déroulement du cours, sachez que:</p>
 <ol type="1">
 <li><p>Je suis un amateur passionné</p></li>
-<li><p>C’est mon premier cours dans une université populaire</p></li>
 <li><p>C’est la première fois que j’enseigne le sujet</p></li>
 <li><p>Ce n’est pas un cours formel</p></li>
 <li><p>Vous pouvez partir à n’importe quel moment</p></li>
@@ -518,6 +583,12 @@ Hategekimana Vestin
 <p><a href="https://lecrabeinfo.net/tutoriels/ouvrir-et-utiliser-le-terminal-windows-sur-windows-11-10/">Tuto Widows</a></p>
 <p><a href="https://support.apple.com/fr-fr/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac">Tuto Mac</a></p>
 <p>Tuto linux… non c’est une blague!</p>
+</section>
+<section id="installez-qwen2.53b" class="slide level2">
+<h2>Installez Qwen2.5:3b</h2>
+<p>Lien: <a href="https://ollama.com/library/qwen2.5:3b">Qwen2.5:3b</a></p>
+<p>Code:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href=""></a><span class="ex">ollama</span> run qwen2.5:3b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="brève-histoire-de-lia" class="slide level2">
 <h2>Brève histoire de l’IA</h2>
@@ -662,17 +733,83 @@ Hategekimana Vestin
 <h2>Pour plus de détails sur l’histoire de l’intelligence artificielle</h2>
 <p><a href="https://cyuhat.github.io/ai_assistant/">IA assistant: méthode, pratique et éthique</a></p>
 </section>
+<section id="chatgpt-cest" class="slide level2">
+<h2>ChatGPT c’est…</h2>
+
+<img data-src="figure/openai-logo-freelogovectors.net_-974571776.png" class="r-stretch"><p>Un ensemble de modèle de OpenAI qui peut:</p>
+<ol type="1">
+<li><p>Créer et traiter du texte</p></li>
+<li><p>Faire de la programmation</p></li>
+<li><p>Créer et traiter des images</p></li>
+<li><p>Créer et traiter du son</p></li>
+</ol>
+<p>En bref, très puissants</p>
+</section>
+<section id="mais-il-a-des-limites" class="slide level2">
+<h2>Mais il a des limites:</h2>
+<ul>
+<li><p>Il est parfois incorrect</p></li>
+<li><p>Il est imprécis</p></li>
+<li><p>Il est consensuel</p></li>
+<li><p>Il est biaisé</p></li>
+</ul>
+<p>Mais ce ne sont pas les plus grande limites!</p>
+</section>
+<section id="les-problèmes-importants-de-chatgpt" class="slide level2">
+<h2>Les problèmes importants de ChatGPT</h2>
+<ol type="1">
+<li><p>Ne respecte pas la vie privée</p></li>
+<li><p>Cause des nouveaux défis environementaux</p></li>
+<li><p>Pose de sérieux problèmes ethiques</p></li>
+</ol>
+</section>
 <section id="problème-de-vie-privée" class="slide level2">
 <h2>Problème de vie privée</h2>
-<p>https://hai.stanford.edu/news/privacy-ai-era-how-do-we-protect-our-personal-information</p>
-<p>https://www.ibm.com/think/insights/ai-privacy</p>
-<p>https://www.tandfonline.com/doi/full/10.1080/08839514.2025.2463722</p>
+
+<img data-src="figure/big-data.jpg" class="r-stretch"><ul>
+<li><p>Nous vivons dans une période de bigdata</p></li>
+<li><p>Les grandes compagnies collectent énormément de données sur nous</p></li>
+<li><p>OpenAi collecte les données de conversation pour entraîner ses modèles</p></li>
+</ul>
+</section>
+<section id="exemple-de-google" class="slide level2">
+<h2>Exemple de google</h2>
+<p>Comment google track nos données?</p>
+<ol type="1">
+<li><p>Historique de recherche</p></li>
+<li><p>Google analytic</p></li>
+</ol>
+</section>
+<section id="transparence-de-la-recherche" class="slide level2">
+<h2>Transparence de la recherche:</h2>
+
+<img data-src="figure/google-search.jpg" class="r-stretch"><p><strong>Nos historiques de recherches sont plus transparentes qu’on le croit</strong></p>
+</section>
+<section id="un-petit-jeu-historique-de-recherche-1" class="slide level2">
+<h2>Un petit jeu: historique de recherche (1)</h2>
+<p>opticien neuchâtel</p>
+<p>unil inscription</p>
+<p>coloc lausanne</p>
+<p>job étudiant</p>
+<p>bourse étude</p>
+</section>
+<section id="un-petit-jeu-historique-de-recherche-2" class="slide level2">
+<h2>Un petit jeu: historique de recherche (2)</h2>
+<p>tourisme suisse été</p>
+<p>notaire liège</p>
+<p>hotel nyon</p>
+<p>davis cup</p>
+<p>randonnées suisse</p>
+<p>dépression symptômes</p>
+</section>
+<section id="solution" class="slide level2">
+<h2>Solution</h2>
+<p>Utiliser des moteurs de recherche qui garantissent la vie privée</p>
+<p><a href="https://duckduckgo.com/">duckduckgo</a></p>
+<p><a href="https://search.brave.com/">brave</a></p>
 </section>
 <section id="problème-environnemental" class="slide level2">
 <h2>Problème environnemental</h2>
-</section>
-<section id="préoccupations-environnementales" class="slide level2">
-<h2>Préoccupations environnementales</h2>
 <h3 id="consommation-dénergie-et-émissions-de-carbone">Consommation d’énergie et émissions de carbone :</h3>
 <ul>
 <li><strong>Utilisation massive d’énergie</strong> : Les modèles d’IA, en particulier les large language models (LLM), nécessitent une puissance de calcul importante et consomment de grandes quantités d’électricité.</li>
@@ -690,6 +827,10 @@ Hategekimana Vestin
 </ul>
 <p><a href="https://news.google.com/read/CBMi0wFBVV95cUxNVTFWZHQ2bEJvMDhqRlNGenR6SmdNNlM1cjExOHREYmM1STZjSGp2R0c2QzRKTWxsNkFoSlktekdjbjVLc0pHSUs5MEFiRE5MbEVWOW1iempCWExoRWVLeTJIRGVDbW9YZE9UeWpYUWJIcGVlRkVzLXozajdWNzNyaFJJd0dmNGx4V0FRNVQwM2w4VzNQVUtMVkVvMjdYOXFmdDQ5NlJScXdUa251U3g5MHpHc0E0SFVtbFJXcFRsRDFPX3h4TEpUakFFV01ZYm1fX2dn?hl=fr&amp;gl=FR&amp;ceid=FR%3Afr"><img data-src="figure/environnement.PNG"></a></p>
 </section>
+<section id="projet-stagrate" class="slide level2">
+<h2>Projet stagrate</h2>
+
+<img data-src="figure/stargate.webp" class="r-stretch"></section>
 <section id="problème-éthique" class="slide level2">
 <h2>Problème éthique</h2>
 </section>
@@ -729,8 +870,8 @@ Hategekimana Vestin
 <li>Les <strong>gains à court terme</strong> de l’IA pourraient conduire à un effondrement si la technologie ne donne pas les résultats escomptés, ce qui aurait un impact sur les <strong>marchés financiers</strong> et les économies.</li>
 </ul>
 </section>
-<section id="limites-résumé" class="slide level2">
-<h2>Limites Résumé</h2>
+<section id="autres-limites" class="slide level2">
+<h2>Autres limites</h2>
 </section>
 <section id="limites-des-llm" class="slide level2">
 <h2>Limites des LLM</h2>
@@ -782,12 +923,8 @@ Hategekimana Vestin
 <ul>
 <li><p>Copyright (contenu volé)</p></li>
 <li><p>Manque de mémoire à long terme (basé sur leur “token window”)</p></li>
-<li><p>Limites du raisonnement complexe (réglée avec GPT o1?)</p></li>
-<li><p>Manque de représentativité dans les langues</p></li>
 <li><p>Biais culturels</p></li>
 <li><p>Risque de confidentialité (OpenAI stock et utilisent les conversations)</p></li>
-<li><p>Limitation multimodal (réglée avec GPT-4o et o1)</p></li>
-<li><p>…</p></li>
 </ul>
 </section></section>
 <section>
@@ -808,7 +945,13 @@ Hategekimana Vestin
 </section>
 <section id="lunivers-des-options" class="slide level2">
 <h2>L’univers des options</h2>
-<p>… liste</p>
+<ul>
+<li>Copilot</li>
+<li>Gemini</li>
+<li>Claude</li>
+<li>DeepSeek</li>
+<li>Perplexity AI</li>
+</ul>
 </section>
 <section id="copilot-anciennement-bing-ai" class="slide level2">
 <h2>1) Copilot (anciennement Bing AI)</h2>
@@ -837,15 +980,58 @@ Hategekimana Vestin
 <li><strong>Forme formation éthique</strong> : Conçu pour gérer les problèmes éthiques et refuser les demandes inappropriées.</li>
 <li><strong>Persistance à la tâche</strong> : Meilleure capacité à suivre des instructions complexes en plusieurs étapes.</li>
 </ol>
-<p><span style="color: red;"><strong>Il faut un compte</strong></span></p>
+</section>
+<section id="deepseek" class="slide level2">
+<h2>4) DeepSeek</h2>
+<ol type="1">
+<li><strong>Coût réduit</strong> : Le développement de DeepSeek a coûté environ 5,58 millions de dollars, soit 20 à 40 fois moins que ChatGPT15. Cette efficacité économique se traduit par des tarifs plus abordables pour les utilisateurs.</li>
+<li><strong>Efficacité énergétique</strong> : DeepSeek nécessite 10 fois moins de puissance de calcul que ChatGPT, ce qui réduit considérablement son empreinte écologique</li>
+<li><strong>Performances comparables</strong> : Malgré son coût réduit, DeepSeek rivalise avec les modèles propriétaires les plus performants en termes de capacités de traitement du langage naturel</li>
+</ol>
 </section>
 <section id="perplexity-ai" class="slide level2">
-<h2>4) Perplexity AI</h2>
+<h2>5) Perplexity AI</h2>
 <p><a href="https://www.perplexity.ai/" class="uri">https://www.perplexity.ai/</a></p>
 <ol type="1">
 <li><strong>Information en temps réel</strong> : Fournit des données en temps réel en effectuant des recherches sur le web.</li>
 <li><strong>Multiples modèles</strong> : Utilise GPT-4, Claude 3 et Gemini Pro, ce qui permet aux utilisateurs de sélectionner différents modèles pour diverses tâches.</li>
 <li><strong>Citations de sources</strong> : Fournit des citations pour toutes ses informations, améliorant ainsi la transparence.</li>
+</ol>
+</section>
+<section id="bonus-1" class="slide level2">
+<h2>Bonus (1)</h2>
+<p>Il y a une IA pour ça:</p>
+<p><a href="https://theresanaiforthat.com/">There is an AI for that</a></p>
+<ul>
+<li>liste de nombreuses IA</li>
+<li>possiblité de filtrer</li>
+<li>À jour</li>
+</ul>
+</section>
+<section id="bonus-2" class="slide level2">
+<h2>Bonus (2)</h2>
+<p>Autres que j’utilise:</p>
+<ul>
+<li><a href="https://quillbot.com/">Quillbot</a></li>
+<li><a href="https://elicit.com/">Elicit</a></li>
+</ul>
+</section>
+<section id="pour-la-vie-privée" class="slide level2">
+<h2>Pour la vie privée</h2>
+<ul>
+<li>Duckduckgo AI</li>
+<li>Huggingface space</li>
+<li>LMStudio</li>
+<li>Ollama</li>
+</ul>
+</section>
+<section id="duckduckgo-ai" class="slide level2">
+<h2>duckduckgo AI</h2>
+<p><a href="https://duckduckgo.com/" class="uri">https://duckduckgo.com/</a></p>
+<ol type="1">
+<li><strong>Accessible</strong>: Gratuit et il suffit d’aller sur le lien</li>
+<li><strong>Privé</strong>: Pas besoin de compte</li>
+<li><strong>Puissant</strong>: Les modèles disponibles sont GPT-4o mini, Lama3.3 70B, Claude 3 Haiku, o3-mini, Mistral 8x7B</li>
 </ol>
 </section>
 <section id="huggingface-space" class="slide level2">
@@ -883,25 +1069,54 @@ Hategekimana Vestin
 <li><strong>Gemini</strong> offre de solides capacités multimodales et une expertise en matière de codage.</li>
 <li><strong>Claude</strong> offre des considérations éthiques et une mémoire plus longue.</li>
 <li><strong>Perplexité</strong> associe des informations en temps réel à des citations de sources.</li>
-<li><strong>Hugging Face Spaces</strong>, <strong>LMStudio</strong>, et <strong>Ollama</strong> offrent des solutions d’IA flexibles et locales pour les utilisateurs soucieux de leur vie privée.</li>
+<li><strong>Hugging Face Spaces</strong>, <strong>Duckduckgo AI</strong>, <strong>LMStudio</strong>, et <strong>Ollama</strong> offrent des solutions d’IA flexibles et locales pour les utilisateurs soucieux de leur vie privée.</li>
 </ul>
-</section></section>
+</section>
+<section id="modèles-locaux-solution-parfaite" class="slide level2">
+<h2>Modèles locaux solution parfaite?</h2>
+<p><strong>Avantages:</strong></p>
+<ul>
+<li>Confidentialité</li>
+<li>Impact environmental marginal</li>
+</ul>
+<p><strong>Désavantages:</strong></p>
+<ul>
+<li>Moins performant que les plus gros modèles (OpenAI, Anthropic, etc.)</li>
+<li>Demande plus d’apprentissage</li>
+</ul>
+</section>
+<section id="la-puissance-des-slm" class="slide level2">
+<h2>La puissance des SLM</h2>
+<p><strong>SLM</strong>: Small Language Models = modèles locaux</p>
+
+<img data-src="figure/model_size.png" class="r-stretch"></section>
+<section id="la-puissance-des-slm-1" class="slide level2">
+<h2>La puissance des SLM</h2>
+<p>Modèles de plus en plus gros…</p>
+
+<img data-src="figure/gpt_size.png" class="r-stretch"></section>
+<section id="les-petits-modèles-deviennent-de-plus-en-plus-intelligent" class="slide level2">
+<h2>Les petits modèles deviennent de plus en plus intelligent</h2>
+<ul>
+<li>Les modèles modernes de la taille de GPT2 (1.5B) sont beaucoups plus intelligents</li>
+<li>On fait plus avec moins (ex. DeepSeek)</li>
+</ul>
+
+<img data-src="figure/slm_performance.jpg" class="r-stretch"></section>
+<section id="compariason" class="slide level2">
+<h2>Compariason</h2>
+
+<img data-src="figure/llm_vs_slm.webp" class="r-stretch"></section></section>
+<section>
 <section id="ollama-et-compagnie-20-minutes" class="title-slide slide level1 center">
 <h1>Ollama et compagnie (20 minutes)</h1>
 
 </section>
-
-<section id="ollama-pratique-90-minutes" class="title-slide slide level1 center">
-<h1>Ollama pratique (90 minutes)</h1>
-
+<section id="comment-marche-un-modèle-local" class="slide level2">
+<h2>Comment marche un modèle local?</h2>
+<p>Comme un grand modèle…</p>
 </section>
-
-<section>
-<section id="que-sont-les-large-language-models-llm" class="title-slide slide level1 center">
-<h1>Que sont les Large Language Models (LLM)?</h1>
-
-</section>
-<section id="que-sont-les-large-language-models-llm-1" class="slide level2">
+<section id="que-sont-les-large-language-models-llm" class="slide level2">
 <h2>Que sont les large language models (LLM) ?</h2>
 <ul>
 <li>Les <strong>LLM</strong> sont un type d’intelligence artificielle (IA) capable de <u>comprendre</u> et de <u>générer du texte</u>.</li>
@@ -1047,13 +1262,100 @@ Hategekimana Vestin
 <li><strong>Créativité</strong> : En prédisant un mot à la fois, les LLM peuvent générer des réponses <u>étonnamment cohérentes et créatives</u>.</li>
 </ol>
 </section>
-<section id="applications-des-llm" class="slide level2">
-<h2>Applications des LLM</h2>
-<p>Les LLM sont utilisés dans différents domaines :</p>
+<section id="ollama-lmstudio-llama.cpp-etc." class="slide level2">
+<h2>Ollama, LMStudio, llama.cpp, etc.</h2>
 <ul>
-<li><p><strong>Chatbots</strong> et assistants virtuels (ChatGPT, OpenAI; Copilot, Microsoft; Gemini, Google)</p></li>
-<li><p><strong>Assistance au code</strong> (GitHub copilot, Microsoft)</p></li>
-<li><p>etc.</p></li>
+<li><strong>Ollama</strong> est idéal pour ceux qui recherchent une solution simple à utiliser avec un support multiplateforme, mais il est limité par la nécessité d’un GPU dédié.</li>
+<li><strong>LM Studio</strong> offre une excellente expérience utilisateur et fonctionne hors ligne, mais il est gourmand en ressources matérielles.</li>
+<li><strong>llama.cpp</strong> est particulièrement adapté aux systèmes légers ou sans GPU grâce à son optimisation CPU, mais il peut nécessiter des compétences techniques avancées.</li>
+</ul>
+</section>
+<section id="pourquoi-ollama" class="slide level2">
+<h2>Pourquoi Ollama?</h2>
+<ul>
+<li>Facile d’installation</li>
+<li>Peut s’intégrer par défaut à de nombreux outils (Obsidian, Copilot, etc.)</li>
+<li>A un très grand <a href="https://github.com/ollama/ollama">écosystème</a></li>
+</ul>
+</section>
+<section id="gpu-et-vram" class="slide level2">
+<h2>GPU et VRAM?</h2>
+<ul>
+<li><p>Le GPU (ou carte graphique) et la VRAM sont indispensables pour l’utilisation des modèles de langage (LLM).</p></li>
+<li><p><strong>Caractéristiques du GPU :</strong></p>
+<ul>
+<li>Spécialisé pour les calculs en parallèle.</li>
+<li>Adapté au traitement des réseaux neuronaux profonds.</li>
+</ul></li>
+<li><p><strong>Rôle et importance de la VRAM :</strong></p>
+<ul>
+<li>Mémoire spécifique pour le stockage rapide de données graphiques.</li>
+<li>Cruciale pour stocker les poids des neurones et les données intermédiaires dans les LLM.</li>
+</ul></li>
+</ul>
+<p><strong>Pour connaître la puissance de son ordinateur pour les llms, il faut vérifier la VRAM</strong></p>
+</section>
+<section id="vérifier-sa-vram" class="slide level2">
+<h2>Vérifier sa VRAM</h2>
+<ul>
+<li><p><a href="https://www.howtogeek.com/797643/how-to-find-vram-on-windows-11/">Windows</a></p></li>
+<li><p><a href="https://www.mackiev.com/techsupport/ht_vram.html">Mac</a></p></li>
+<li><p><a href="https://www.lecoindunet.com/comment-verifier-la-ram-sur-linux">Linux</a></p></li>
+</ul>
+</section></section>
+<section>
+<section id="ollama-pratique-90-minutes" class="title-slide slide level1 center">
+<h1>Ollama pratique (90 minutes)</h1>
+
+</section>
+<section id="terminal" class="slide level2">
+<h2>Terminal</h2>
+<ul>
+<li>On utilise de base un terminal avec Ollama</li>
+<li>Il existe des interfaces utilisateurs plus simple</li>
+<li>Il est improtant de connaitre les commande de base</li>
+</ul>
+
+<img data-src="figure/terminal.png" class="r-stretch"></section>
+<section id="commandes-de-base" class="slide level2">
+<h2>COmmandes de base</h2>
+<p>Aide</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href=""></a>ollama help</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Équivalent</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href=""></a>ollama</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Liste des modèles</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href=""></a>ollama list</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Information sur un modèle</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a href=""></a>ollama show qwen2.5:3b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Télécharger un nouveau modèle</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a href=""></a>ollama pull bge-m3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="exercie" class="slide level2">
+<h2>Exercie</h2>
+<p>En attendant le que téléchargement soit fini. Vous pouvez tester les alternatives que nous avons présenté plus tôt:</p>
+<ul>
+<li><a href="https://theresanaiforthat.com/">There is an AI for that</a></li>
+<li><a href="https://duckduckgo.com/">Duckduckgo AI</a></li>
+<li><a href="https://huggingface.co/spaces">HuggingFace Space</a></li>
+</ul>
+<p>Suite: lancer un modèle</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb7-1"><a href=""></a>ollama run qwen2.5:3b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="dans-une-conversation" class="slide level2">
+<h2>Dans une conversation</h2>
+<p>Liste des commandes</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a href=""></a>/?</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Infos sur le modèle</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a href=""></a>/show info</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Effacer le contexte</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb10-1"><a href=""></a>/clear</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Quitter la conversation</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource shell number-lines code-with-copy"><code class="sourceCode"><span id="cb11-1"><a href=""></a>/bye</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="exercice" class="slide level2">
+<h2>Exercice</h2>
+<ul>
+<li>Tester le modèle</li>
 </ul>
 <div class="quarto-auto-generated-content">
 <p><img src="figure/wedata_logo.png" class="slide-logo"></p>
@@ -1272,82 +1574,6 @@ Hategekimana Vestin
         ]
       });
     </script>
-    
-
-    <script>
-
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
-      // slide changes (different for each slide format).
-
-      (function () {
-
-        // dispatch for htmlwidgets
-
-        function fireSlideEnter() {
-
-          const event = window.document.createEvent("Event");
-
-          event.initEvent("slideenter", true, true);
-
-          window.document.dispatchEvent(event);
-
-        }
-
-    
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-
-          fireSlideEnter();
-
-    
-
-          // dispatch for shiny
-
-          if (window.jQuery) {
-
-            if (previousSlide) {
-
-              window.jQuery(previousSlide).trigger("hidden");
-
-            }
-
-            if (currentSlide) {
-
-              window.jQuery(currentSlide).trigger("shown");
-
-            }
-
-          }
-
-        }
-
-    
-
-        // hookup for slidy
-
-        if (window.w3c_slidy) {
-
-          window.w3c_slidy.add_observer(function (slide_num) {
-
-            // slide_num starts at position 1
-
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
-          });
-
-        }
-
-    
-
-      })();
-
-    </script>
-
-    
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
