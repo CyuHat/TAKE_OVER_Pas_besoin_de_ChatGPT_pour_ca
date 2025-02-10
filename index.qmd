@@ -79,7 +79,7 @@ Pour le bon déroulement du cours, sachez que:
 
 -   Qu'est-ce que ChatGPT ? (30 minutes)
 
--   Alternatives Viables ? (35 minutes)
+-   Alternatives viables ? (35 minutes)
 
 -   Ollama et compagnie (20 minutes)
 
@@ -103,7 +103,7 @@ Pour le bon déroulement du cours, sachez que:
 
 Probablement à ça...
 
-![Illustration de severs](figure/Microsoft-Windows-Server-2025-kommt.jpg){fig-align="center"}
+![Illustration de serveurs](figure/Microsoft-Windows-Server-2025-kommt.jpg){fig-align="center"}
 
 ## Qu'est-ce que l'intelligence artificielle (IA) ? {auto-animate="true"}
 
@@ -289,7 +289,7 @@ ollama run qwen2.5:3b
 :::
 
 ::: {.column width="50%"}
-5.  **Large language model (LLM)** : Un sous-domaine de l'IA génératieve axé sur les tâches liées au [langage naturel (texte)]{.underline}.
+5.  **Large language model (LLM)** : un sous-domaine de l'IA générative axé sur les tâches liées au [langage naturel (texte)]{.underline}.
     -   Tâches: [Résumé]{.underline}, [production]{.underline}, [classification]{.underline}, [traduction]{.underline} et [correction]{.underline} de texte
     -   Exemple : Modèles GPT comme ChatGPT.
 
@@ -305,7 +305,7 @@ ollama run qwen2.5:3b
 
 ![](figure/openai-logo-freelogovectors.net_-974571776.png)
 
-Un ensemble de modèle de OpenAI qui peut:
+Un ensemble de modèles de OpenAI qui peut:
 
 1. Créer et traiter du texte
 
@@ -327,15 +327,15 @@ En bref, très puissants
 
 - Il est biaisé
 
-Mais ce ne sont pas les plus grande limites!
+Mais ce ne sont pas les plus grandes limites!
 
 ## Les problèmes importants de ChatGPT
 
 1. Ne respecte pas la vie privée
 
-2. Cause des nouveaux défis environementaux
+2. Cause des nouveaux défis environnementaux
 
-3. Pose de sérieux problèmes ethiques
+3. Pose de sérieux problèmes éthiques
 
 ## Problème de vie privée
 
@@ -347,19 +347,19 @@ Mais ce ne sont pas les plus grande limites!
 
 - OpenAi collecte les données de conversation pour entraîner ses modèles
 
-## Exemple de google
+## Exemple de Google
 
 Comment google track nos données?
 
 1. Historique de recherche
 
-2. Google analytic
+2. Google analytics
 
 ## Transparence de la recherche: 
 
 ![](figure/google-search.jpg)
 
-**Nos historiques de recherches sont plus transparentes qu'on le croit**
+**Nos historiques de recherches sont plus transparents qu'on le croit**
 
 ## Un petit jeu: historique de recherche (1)
 
@@ -387,7 +387,7 @@ randonnées suisse
 
 dépression symptômes
 
-## Avoir des conversations complète  c'est encore pire...
+## Avoir des conversations complètes  c'est encore pire...
 
   ![](figure/chat_history.jpg)
 
@@ -419,7 +419,7 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 
 [![](figure/environnement.PNG)](https://news.google.com/read/CBMi0wFBVV95cUxNVTFWZHQ2bEJvMDhqRlNGenR6SmdNNlM1cjExOHREYmM1STZjSGp2R0c2QzRKTWxsNkFoSlktekdjbjVLc0pHSUs5MEFiRE5MbEVWOW1iempCWExoRWVLeTJIRGVDbW9YZE9UeWpYUWJIcGVlRkVzLXozajdWNzNyaFJJd0dmNGx4V0FRNVQwM2w4VzNQVUtMVkVvMjdYOXFmdDQ5NlJScXdUa251U3g5MHpHc0E0SFVtbFJXcFRsRDFPX3h4TEpUakFFV01ZYm1fX2dn?hl=fr&gl=FR&ceid=FR%3Afr)
 
-## Projet stagrate
+## Projet Stargate
 
 ![](figure/stargate.webp)
 
@@ -434,7 +434,7 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 ### Monopole du pouvoir de l'IA :
 
 -   Le développement de l'IA est **dominé par quelques géants de la technologie** tels que OpenAI, Google, Microsoft et Amazon. **Et Nvidia!**
-    -   Trop cher pour n'importe qui d'autres (infrastructure et énergie)
+    -   Trop cher pour n'importe qui d'autre (infrastructure et énergie)
 -   Ces entreprises contrôlent les **données, les ressources et l'infrastructure** nécessaires au développement de modèles d'IA avancés, ce qui leur confère un contrôle monopolistique.
 -   Ce monopole rend la **concurrence difficile pour les petites entreprises ou les initiatives open-source**, étouffant ainsi l'innovation et la diversité dans ce domaine.
     -   Ces initiatives existent tout de même grâce au modèle open source de Facebook (Llama)
@@ -465,7 +465,7 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 
 ## Limites des LLM
 
--   **Coûts** : Ces modèles ont besoin d'une [grande puissance de calcule]{.underline} pour les entraîner et les utiliser. Seules [des grandes entreprises]{.underline} peuvent se lancer dans leur création.
+-   **Coûts** : Ces modèles ont besoin d'une [grande puissance de calcul]{.underline} pour les entraîner et les utiliser. Seules [des grandes entreprises]{.underline} peuvent se lancer dans leur création.
 
     -   Cependant, il existe des projets [open-source]{.underline} et [locaux]{.underline} mais qui ne sont pas aussi puissants que des modèles comme ChatGPT ou Claud (Llama, Mixtral, Phi, etc.)
 
@@ -479,9 +479,9 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 
 ## Limites des LLM
 
--   **Sécurité** : Comme les modèles ne sont pas codés à la main avec des règles, [leur comportement ne peut être prédit]{.underline}, d'où la nécessité d'une [validation humaine]{.underline} pour réduire les réponses problématiques (censure). Cependant, il est [impossible de prévoir tous les cas]{.underline} et, très souvent, des personnes trouvent un moyen de détourner les modèles.
+-   **Sécurité** : Comme les modèles ne sont pas codés à la main avec des règles [leur comportement ne peut être prédit]{.underline}, d'où la nécessité d'une [validation humaine]{.underline} pour réduire les réponses problématiques (censure). Cependant, il est [impossible de prévoir tous les cas]{.underline} et, très souvent, des personnes trouvent un moyen de détourner les modèles.
 
-    -   Solution: [données de meilleures qualités]{.underline} (garbage-in, garbage-out)
+    -   Solution: [données de meilleure qualité]{.underline} (garbage-in, garbage-out)
 
 [![](figure/chatgpt_detournement.PNG){fig-align="center"}](https://www.zdnet.fr/actualites/chatgpt-est-deja-detourne-pour-ecrire-des-logiciels-malveillants-39952280.htm)
 
@@ -501,15 +501,15 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 
 -   Biais culturels
 
--   Risque de confidentialité (OpenAI stock et utilisent les conversations)
+-   Risque de confidentialité (OpenAI stock et utilise les conversations)
 
-# Alternatives Viables ? (35 minutes)
+# Alternatives viables ? (35 minutes)
 
 ## Introduction : Pourquoi explorer les alternatives à ChatGPT?
 
--   Bien que **ChatGPT** soit un modèle d'IA populaire, plusieurs autres alternatives offrent des caractéristiques et des améliorations uniques. De plus, les problèmes suivant doivent être mentionnés:
+-   Bien que **ChatGPT** soit un modèle d'IA populaire, plusieurs autres alternatives offrent des caractéristiques et des améliorations uniques. De plus, les problèmes suivants doivent être mentionnés:
     -   **Confidentialité** : Stocke les conversations et les utilise pour former le modèle.
-    -   **Utilisation** : Généraliste, ne convient pas à toutes les utilisations
+    -   **Utilisation** : Généraliste, ne conviens pas à toutes les utilisations
     -   **Droit d'auteur** : a volé de nombreux contenus en ligne
     
 ## L'univers des options
@@ -526,14 +526,14 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 
 1.  **Information en temps réel** : Contrairement à ChatGPT, Copilot est connecté à Internet, fournissant des données à jour et des événements actuels.
 2.  **Intégration de la recherche sur le web** : Copilot peut effectuer des recherches sur le web et résumer les résultats.
-3.  **Génération d'images** : Alimenté par **DALL-E**, il peut générer des images à partir d'invites textuelles.
+3.  **Génération d'images** : alimenté par **DALL-E**, il peut générer des images à partir d'invites textuelles.
 4.  **Traitement des données visuelles** : Les utilisateurs peuvent télécharger des images et recevoir des informations ou des analyses à leur sujet.
 
 ## 2) Gemini
 
 <https://gemini.google.com/app>
 
-1.  **Capacités multimodales** : Gemini gère le texte, les images, l'audio et la vidéo​.
+1.  **Capacités multimodales** : Gemini gèrent le texte, les images, l'audio et la vidéo​.
 2.  **Meilleures performances** : Surpasse le GPT-4 dans les tests de référence liés à la compréhension et au raisonnement linguistiques multitâches.
 3.  **Capacités de codage avancées** : Excelle dans les tâches liées au code, fournissant des résultats plus précis.
 
@@ -542,8 +542,8 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 <https://claude.ai/login?returnTo=%2F%3F>
 
 1.  **Fenêtre contextuelle plus longue** : Claude peut mémoriser et traiter des conversations beaucoup plus longues (jusqu'à 100 000 mots).
-2.  **Forme formation éthique** : Conçu pour gérer les problèmes éthiques et refuser les demandes inappropriées.
-3.  **Persistance à la tâche** : Meilleure capacité à suivre des instructions complexes en plusieurs étapes.
+2.  **Forme formation éthique** : conçu pour gérer les problèmes éthiques et refuser les demandes inappropriées.
+3.  **Persistance à la tâche** : meilleure capacité à suivre des instructions complexes en plusieurs étapes.
 
 ## 4) DeepSeek
 
@@ -557,9 +557,9 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 
 <https://www.perplexity.ai/>
 
-1.  **Information en temps réel** : Fournit des données en temps réel en effectuant des recherches sur le web.
+1.  **Information en temps réel** : Fournis des données en temps réel en effectuant des recherches sur le web.
 2.  **Multiples modèles** : Utilise GPT-4, Claude 3 et Gemini Pro, ce qui permet aux utilisateurs de sélectionner différents modèles pour diverses tâches.
-3.  **Citations de sources** : Fournit des citations pour toutes ses informations, améliorant ainsi la transparence.
+3.  **Citations de sources** : Fournis des citations pour toutes ses informations, améliorant ainsi la transparence.
 
 ## Bonus (1)
 
@@ -568,7 +568,7 @@ Il y a une IA pour ça:
 [There is an AI for that](https://theresanaiforthat.com/)
 
 - liste de nombreuses IA
-- possiblité de filtrer
+- possibilité de filtrer
 - À jour
 
 ## Bonus (2)
@@ -636,7 +636,7 @@ Autres que j'utilise:
 **Désavantages:**
 
 - Moins performant que les plus gros modèles (OpenAI, Anthropic, etc.)
-- Demande plus d'apprentissage
+- Demande plus d'apprentissages
 
 ## La puissance des SLM
 
@@ -650,9 +650,9 @@ Modèles de plus en plus gros...
 
 ![](figure/gpt_size.png)
 
-## Les petits modèles deviennent de plus en plus intelligent
+## Les petits modèles deviennent de plus en plus intelligents
 
-- Les modèles modernes de la taille de GPT2 (1.5B) sont beaucoups plus intelligents
+- Les modèles modernes de la taille de GPT2 (1.5B) sont beaucoup plus intelligents
 - On fait plus avec moins (ex. DeepSeek)
 
 ![](figure/slm_performance.jpg)
@@ -737,7 +737,7 @@ En tant que modèle de machine learning, le modèle a besoin d'apprendre en prem
 ## La tokenisation : Découpage du texte en morceaux
 
 -   Les LLM ne traitent pas des phrases entières en une seule fois. Au lieu de cela, ils [décomposent le texte en plus petits morceaux]{.underline} appelés **tokens**.
--   Les tokens peuvent être: des mots entiers, [des parties de mots]{.underline} ou des signes de ponctuation
+-   Les tokens peuvent être: des mots entiers [des parties de mots]{.underline} ou des signes de ponctuation
 
 [![](gif/tokens.gif){fig-align="center" width="621"}](https://www.youtube.com/watch?v=wjZofJX0v4M)
 
@@ -796,6 +796,7 @@ En tant que modèle de machine learning, le modèle a besoin d'apprendre en prem
 
 - Facile d'installation
 - Peut s'intégrer par défaut à de nombreux outils (Obsidian, Copilot, etc.)
+
 - A un très grand [écosystème](https://github.com/ollama/ollama)
 
 ## GPU et VRAM?
@@ -825,8 +826,8 @@ En tant que modèle de machine learning, le modèle a besoin d'apprendre en prem
 ## Terminal
 
 - On utilise de base un terminal avec Ollama
-- Il existe des interfaces utilisateurs plus simple
-- Il est improtant de connaitre les commande de base
+- Il existe des interfaces utilisateurs plus simples
+- Il est important de connaitre les commandes de base
 
 ![](figure/terminal.png)
 
@@ -860,9 +861,9 @@ Télécharger un nouveau modèle
 ollama pull bge-m3
 ```
 
-## Exercie
+## Exercice
 
-En attendant le que téléchargement soit fini. Vous pouvez tester les alternatives que nous avons présenté plus tôt:
+En attendant le que le téléchargement soit fini. Vous pouvez tester les alternatives que nous avons présentées plus tôt:
 
 - [There is an AI for that](https://theresanaiforthat.com/)
 - [Duckduckgo AI](https://duckduckgo.com/)
@@ -902,9 +903,9 @@ Quitter la conversation
 
 ## Exercice
 
-- Tester le modèle pour différente tâches
-- Chercher d'autres modèle sur la page des modèles de [ollama](https://ollama.com/search)
-- Durant le téléchargement vous pouvez aller tester les autres alternatives:
+- Tester le modèle pour différentes tâches
+- Chercher d'autres modèles sur la page des modèles de [ollama](https://ollama.com/search)
+- Durant le téléchargement, vous pouvez aller tester les autres alternatives:
   - [There is an AI for that](https://theresanaiforthat.com/)
   - [Duckduckgo AI](https://duckduckgo.com/)
   - [HuggingFace Space](https://huggingface.co/spaces)
@@ -919,7 +920,7 @@ Exemple de tâche: question de culture générale, question mathématique, synon
 Utilisons une interface utilisateur: **Page Assist**
 
 - [Chrome](https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo)
-- [FireFox](https://addons.mozilla.org/en-US/firefox/addon/page-assist/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/page-assist/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
 *Le lien chrome fonctionne aussi pour: Brave, Vivaldi, Edge et Opera*
 
@@ -960,9 +961,9 @@ Taille de la VRAM
 
 ## System prompt
 
-**Système Prompt (System Prompt)** : Instruction spéciale définissant le comportement global du modèle.
+**Système prompt (System Prompt)** : Instruction spéciale définissant le comportement global du modèle.
 
-Le système prompt établit les règles et cadre de l'interaction avec le modèle, transformant GPT en chatbots spécialisés adaptés à diverses situations.
+Le système prompt établit les règles et le cadre de l'interaction avec le modèle, transformant GPT en chatbots spécialisés adaptés à diverses situations.
 
 ## Structure d'un system prompt
 
@@ -1079,7 +1080,7 @@ Use ace_tools.display_dataframe_to_user(name: str, dataframe: pandas.DataFrame) 
 ## One-shot Prompting {.scrollable}
 
 - **Description** : Ici, un seul exemple est fourni avec l'instruction pour aider le modèle à mieux comprendre la tâche ou le format attendu.
-- **Avantages** : Utile lorsque le modèle a besoin d'un contexte minimal pour produire des réponses plus précises.
+- **Avantage** : Utile lorsque le modèle a besoin d'un contexte minimal pour produire des réponses plus précises.
 - **Exemple** :
 
 ```
@@ -1097,7 +1098,7 @@ Français :
 ## Few-shot Prompting {.scrollable}
 
 - **Description** : Cette méthode implique de fournir plusieurs exemples dans le prompt pour guider le modèle. Cela permet de mieux contextualiser la tâche et d'améliorer la précision des réponses.
-- **Avantages** : Particulièrement efficace pour les tâches complexes ou spécifiques où des exemples multiples aident à établir un schéma clair.
+- **Avantage** : Particulièrement efficace pour les tâches complexes ou spécifiques où des exemples multiples aident à établir un schéma clair.
 - **Exemple** :
   
 ```
@@ -1119,7 +1120,7 @@ Français :
 ## Chain-of-Thought (CoT) Prompting {.scrollable}
 
 - **Description** : Cette technique demande au modèle de décomposer une tâche complexe en étapes logiques successives. Cela améliore la capacité du modèle à raisonner et à fournir des réponses claires et détaillées.
-- **Avantages** : Idéal pour les problèmes nécessitant plusieurs étapes de raisonnement ou une explication détaillée. Cela rend également les réponses plus interprétables.
+- **Avantage** : Idéal pour les problèmes nécessitant plusieurs étapes de raisonnement ou une explication détaillée. Cela rend également les réponses plus interprétables.
 - **Exemple** (résolution de problème mathématique) :
 
 ```
@@ -1140,10 +1141,10 @@ Réponse finale :
 
 ## Des idées de prompt
 
-- [The Big Prompt Library](https://github.com/0xeb/TheBigPromptLibrary) list une grande variété de promptes utiles
+- [The Big Prompt Library](https://github.com/0xeb/TheBigPromptLibrary) list une grande variété de promptes utile
 - [Prompte pour le raisonnement](https://gist.github.com/Maharshi-Pandya/4aeccbe1dbaa7f89c182bd65d2764203) un supper prompte pour simuler un raisonnement dans des modèles sans raisonnements.
 
-**Raisonnement**: Pousse le modèle à réfléchir (générer du texte) avant de répondre. Cela s'appel du **Chain of thought** (CoT).
+**Raisonnement**: Pousse le modèle à réfléchir (générer du texte) avant de répondre. Cela s'appelle du **Chain of thought** (CoT).
 
 Modèle faisant du raisonnement:
 
@@ -1152,12 +1153,12 @@ Modèle faisant du raisonnement:
 
 ## Créer ses applications
 
-Pour éviter d'écrire des promptes (message) systématiquement, créer des systèmes promptes permet de se simplifier la tâche.
+Pour éviter d'écrire des promptes (message) systématiquement, créer des systèmes prompts permet de se simplifier la tâche.
 
-**Nous allons faire une exemple de dictionnaire des synonymes:**
+**Nous allons faire un exemple de dictionnaire des synonymes:**
 
-- **But:** Lorsque nous écrivons un mot le modèle nous renvoie une lsite de synonymes
-- **Utilité:** Évite de devoir réécrire le prompte à chaque fois
+- **But:** Lorsque nous écrivons un mot, le modèle nous renvoie une liste de synonymes
+- **Utilité:** Évite de devoir réécrire le prompt à chaque fois
 
 ## Astuces pour les prompts
 
@@ -1166,14 +1167,14 @@ Pour éviter d'écrire des promptes (message) systématiquement, créer des syst
 3. Les llms manquent de sens commun: **Soyez précis dans votre demande**
 4. Les llms savent recopier les structures: **Donnez des exemples concrets**
 5. Les llms modernes ont un grand contexte: **N'hésitez pas à créer de longs prompts détaillés**
-6. Les llms sont bon pour repérer les structures: **Utilisez des caractères spéciaux comme `{}` pour améliiorer la structure**
-7. Les llms donnerons toujours une réponse même lorsqu'ils ne savent pas: **Donnez des instruction lorsque le modèle ne sait pas**
+6. Les llms sont bons pour repérer les structures: **Utilisez des caractères spéciaux comme `{}` pour améliorer la structure**
+7. Les llms donneront toujours une réponse même lorsqu'ils ne savent pas: **Donnez des instructions lorsque le modèle ne sait pas**
 
 ## Exercices
 
-- Créer une application de correction de text et de synthaxe
+- Créer une application de correction de texte et de syntaxe
 - Créer une application de traduction
-- Créer une applicaiton pour répondre aux emails (modèle)
+- Créer une application pour répondre aux emails (modèle)
 - Trouver d'autres idées d'applications
 
 ## RAG
@@ -1182,7 +1183,7 @@ Pour éviter d'écrire des promptes (message) systématiquement, créer des syst
 
 ## RAG avec Page Assist
 
-**Document locaux:**
+**Document local:**
 
 - Paramètre: Gérer les connaissances
 
