@@ -150,7 +150,7 @@ Lien: [Qwen2.5:3b](https://ollama.com/library/qwen2.5:3b)
 
 Code:
 
-```bash
+``` bash
 ollama run qwen2.5:3b
 ```
 
@@ -307,55 +307,55 @@ ollama run qwen2.5:3b
 
 Un ensemble de modèles de OpenAI qui peut:
 
-1. Créer et traiter du texte
+1.  Créer et traiter du texte
 
-2. Faire de la programmation
+2.  Faire de la programmation
 
-3. Créer et traiter des images
+3.  Créer et traiter des images
 
-4. Créer et traiter du son
+4.  Créer et traiter du son
 
 En bref, très puissants
 
 ## Mais il a des limites:
 
-- Il est parfois incorrect
+-   Il est parfois incorrect
 
-- Il est imprécis
+-   Il est imprécis
 
-- Il est consensuel
+-   Il est consensuel
 
-- Il est biaisé
+-   Il est biaisé
 
 Mais ce ne sont pas les plus grandes limites!
 
 ## Les problèmes importants de ChatGPT
 
-1. Ne respecte pas la vie privée
+1.  Ne respecte pas la vie privée
 
-2. Cause des nouveaux défis environnementaux
+2.  Cause des nouveaux défis environnementaux
 
-3. Pose de sérieux problèmes éthiques
+3.  Pose de sérieux problèmes éthiques
 
 ## Problème de vie privée
 
 ![](figure/big-data.jpg)
 
-- Nous vivons dans une période de bigdata
+-   Nous vivons dans une période de bigdata
 
-- Les grandes compagnies collectent énormément de données sur nous
+-   Les grandes compagnies collectent énormément de données sur nous
 
-- OpenAi collecte les données de conversation pour entraîner ses modèles
+-   OpenAi collecte les données de conversation pour entraîner ses modèles
 
 ## Exemple de Google
 
 Comment google track nos données?
 
-1. Historique de recherche
+1.  Historique de recherche
 
-2. Google analytics
+2.  Google analytics
 
-## Transparence de la recherche: 
+## Transparence de la recherche:
 
 ![](figure/google-search.jpg)
 
@@ -387,9 +387,9 @@ randonnées suisse
 
 dépression symptômes
 
-## Avoir des conversations complètes  c'est encore pire...
+## Avoir des conversations complètes c'est encore pire...
 
-  ![](figure/chat_history.jpg)
+![](figure/chat_history.jpg)
 
 ## Solution pour les moteurs de recherche
 
@@ -425,9 +425,9 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 
 ## Problème éthique
 
-- Monopole
+-   Monopole
 
-- Bulle financière
+-   Bulle financière
 
 ## L'IA et le monopole des entreprises
 
@@ -457,11 +457,11 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 
 ## Autres limites
 
-- Coût
-- Développement
-- Hallucination
-- Sécurité
-- Mise à jour
+-   Coût
+-   Développement
+-   Hallucination
+-   Sécurité
+-   Mise à jour
 
 ## Limites des LLM
 
@@ -511,14 +511,14 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
     -   **Confidentialité** : Stocke les conversations et les utilise pour former le modèle.
     -   **Utilisation** : Généraliste, ne conviens pas à toutes les utilisations
     -   **Droit d'auteur** : a volé de nombreux contenus en ligne
-    
+
 ## L'univers des options
 
-- Copilot
-- Gemini
-- Claude
-- DeepSeek
-- Perplexity AI
+-   Copilot
+-   Gemini
+-   Claude
+-   DeepSeek
+-   Perplexity AI
 
 ## 1) Copilot (anciennement Bing AI)
 
@@ -549,9 +549,9 @@ Utiliser des moteurs de recherche qui garantissent la vie privée
 
 <https://www.deepseek.com/>
 
-1. **Coût réduit** : Le développement de DeepSeek a coûté environ 5,58 millions de dollars, soit 20 à 40 fois moins que ChatGPT15. Cette efficacité économique se traduit par des tarifs plus abordables pour les utilisateurs.
-2. **Efficacité énergétique** : DeepSeek nécessite 10 fois moins de puissance de calcul que ChatGPT, ce qui réduit considérablement son empreinte écologique
-3. **Performances comparables** : Malgré son coût réduit, DeepSeek rivalise avec les modèles propriétaires les plus performants en termes de capacités de traitement du langage naturel
+1.  **Coût réduit** : Le développement de DeepSeek a coûté environ 5,58 millions de dollars, soit 20 à 40 fois moins que ChatGPT15. Cette efficacité économique se traduit par des tarifs plus abordables pour les utilisateurs.
+2.  **Efficacité énergétique** : DeepSeek nécessite 10 fois moins de puissance de calcul que ChatGPT, ce qui réduit considérablement son empreinte écologique
+3.  **Performances comparables** : Malgré son coût réduit, DeepSeek rivalise avec les modèles propriétaires les plus performants en termes de capacités de traitement du langage naturel
 
 ## 5) Perplexity AI
 
@@ -567,31 +567,31 @@ Il y a une IA pour ça:
 
 [There is an AI for that](https://theresanaiforthat.com/)
 
-- liste de nombreuses IA
-- possibilité de filtrer
-- À jour
+-   liste de nombreuses IA
+-   possibilité de filtrer
+-   À jour
 
 ## Bonus (2)
 
 Autres que j'utilise:
 
-- [Quillbot](https://quillbot.com/)
-- [Elicit](https://elicit.com/)
+-   [Quillbot](https://quillbot.com/)
+-   [Elicit](https://elicit.com/)
 
 ## Pour la vie privée
 
-- Duckduckgo AI
-- Huggingface space
-- LMStudio
-- Ollama
+-   Duckduckgo AI
+-   Huggingface space
+-   LMStudio
+-   Ollama
 
 ## duckduckgo AI
 
 <https://duckduckgo.com/>
 
-1. **Accessible**: Gratuit et il suffit d'aller sur le lien
-2. **Privé**: Pas besoin de compte
-3. **Puissant**: Les modèles disponibles sont GPT-4o mini, Lama3.3 70B, Claude 3 Haiku, o3-mini, Mistral 8x7B
+1.  **Accessible**: Gratuit et il suffit d'aller sur le lien
+2.  **Privé**: Pas besoin de compte
+3.  **Puissant**: Les modèles disponibles sont GPT-4o mini, Lama3.3 70B, Claude 3 Haiku, o3-mini, Mistral 8x7B
 
 ## Huggingface space
 
@@ -630,13 +630,13 @@ Autres que j'utilise:
 
 **Avantages:**
 
-- Confidentialité
-- Impact environmental marginal
+-   Confidentialité
+-   Impact environmental marginal
 
 **Désavantages:**
 
-- Moins performant que les plus gros modèles (OpenAI, Anthropic, etc.)
-- Demande plus d'apprentissages
+-   Moins performant que les plus gros modèles (OpenAI, Anthropic, etc.)
+-   Demande plus d'apprentissages
 
 ## La puissance des SLM
 
@@ -652,8 +652,8 @@ Modèles de plus en plus gros...
 
 ## Les petits modèles deviennent de plus en plus intelligents
 
-- Les modèles modernes de la taille de GPT2 (1.5B) sont beaucoup plus intelligents
-- On fait plus avec moins (ex. DeepSeek)
+-   Les modèles modernes de la taille de GPT2 (1.5B) sont beaucoup plus intelligents
+-   On fait plus avec moins (ex. DeepSeek)
 
 ![](figure/slm_performance.jpg)
 
@@ -788,46 +788,49 @@ En tant que modèle de machine learning, le modèle a besoin d'apprendre en prem
 
 ## Ollama, LMStudio, llama.cpp, etc.
 
-- **Ollama** est idéal pour ceux qui recherchent une solution simple à utiliser avec un support multiplateforme, mais il est limité par la nécessité d'un GPU dédié.
-- **LM Studio** offre une excellente expérience utilisateur et fonctionne hors ligne, mais il est gourmand en ressources matérielles.
-- **llama.cpp** est particulièrement adapté aux systèmes légers ou sans GPU grâce à son optimisation CPU, mais il peut nécessiter des compétences techniques avancées.
+-   **Ollama** est idéal pour ceux qui recherchent une solution simple à utiliser avec un support multiplateforme, mais il est limité par la nécessité d'un GPU dédié.
+-   **LM Studio** offre une excellente expérience utilisateur et fonctionne hors ligne, mais il est gourmand en ressources matérielles.
+-   **llama.cpp** est particulièrement adapté aux systèmes légers ou sans GPU grâce à son optimisation CPU, mais il peut nécessiter des compétences techniques avancées.
 
 ## Pourquoi Ollama?
 
-- Facile d'installation
-- Peut s'intégrer par défaut à de nombreux outils (Obsidian, Copilot, etc.)
+-   Facile d'installation
 
-- A un très grand [écosystème](https://github.com/ollama/ollama)
+-   Peut s'intégrer par défaut à de nombreux outils (Obsidian, Copilot, etc.)
+
+-   A un très grand [écosystème](https://github.com/ollama/ollama)
 
 ## GPU et VRAM?
 
-- Le GPU (ou carte graphique) et la VRAM sont indispensables pour l'utilisation des modèles de langage (LLM).
+-   Le GPU (ou carte graphique) et la VRAM sont indispensables pour l'utilisation des modèles de langage (LLM).
 
-- **Caractéristiques du GPU :**
-   - Spécialisé pour les calculs en parallèle.
-   - Adapté au traitement des réseaux neuronaux profonds.
-   
-- **Rôle et importance de la VRAM :**
-   - Mémoire spécifique pour le stockage rapide de données graphiques.
-   - Cruciale pour stocker les poids des neurones et les données intermédiaires dans les LLM.
-   
+-   **Caractéristiques du GPU :**
+
+    -   Spécialisé pour les calculs en parallèle.
+    -   Adapté au traitement des réseaux neuronaux profonds.
+
+-   **Rôle et importance de la VRAM :**
+
+    -   Mémoire spécifique pour le stockage rapide de données graphiques.
+    -   Cruciale pour stocker les poids des neurones et les données intermédiaires dans les LLM.
+
 **Pour connaître la puissance de son ordinateur pour les llms, il faut vérifier la VRAM**
-   
+
 ## Vérifier sa VRAM
 
-- [Windows](https://www.howtogeek.com/797643/how-to-find-vram-on-windows-11/)
+-   [Windows](https://www.howtogeek.com/797643/how-to-find-vram-on-windows-11/)
 
-- [Mac](https://www.mackiev.com/techsupport/ht_vram.html)
+-   [Mac](https://www.mackiev.com/techsupport/ht_vram.html)
 
-- [Linux](https://www.lecoindunet.com/comment-verifier-la-ram-sur-linux)
+-   [Linux](https://www.lecoindunet.com/comment-verifier-la-ram-sur-linux)
 
 # Ollama pratique (90 minutes)
 
 ## Terminal
 
-- On utilise de base un terminal avec Ollama
-- Il existe des interfaces utilisateurs plus simples
-- Il est important de connaitre les commandes de base
+-   On utilise de base un terminal avec Ollama
+-   Il existe des interfaces utilisateurs plus simples
+-   Il est important de connaitre les commandes de base
 
 ![](figure/terminal.png)
 
@@ -835,29 +838,31 @@ En tant que modèle de machine learning, le modèle a besoin d'apprendre en prem
 
 Aide
 
-```shell
+``` shell
 ollama help
 ```
+
 Équivalent
 
-```shell
+``` shell
 ollama
 ```
+
 Liste des modèles
 
-```shell
+``` shell
 ollama list
 ```
 
 Information sur un modèle
 
-```shell
+``` shell
 ollama show qwen2.5:3b
 ```
 
 Télécharger un nouveau modèle
 
-```shell
+``` shell
 ollama pull bge-m3
 ```
 
@@ -865,13 +870,13 @@ ollama pull bge-m3
 
 En attendant le que le téléchargement soit fini. Vous pouvez tester les alternatives que nous avons présentées plus tôt:
 
-- [There is an AI for that](https://theresanaiforthat.com/)
-- [Duckduckgo AI](https://duckduckgo.com/)
-- [HuggingFace Space](https://huggingface.co/spaces)
+-   [There is an AI for that](https://theresanaiforthat.com/)
+-   [Duckduckgo AI](https://duckduckgo.com/)
+-   [HuggingFace Space](https://huggingface.co/spaces)
 
 Suite: lancer un modèle
 
-```shell
+``` shell
 ollama run qwen2.5:3b
 ```
 
@@ -879,37 +884,37 @@ ollama run qwen2.5:3b
 
 Liste des commandes
 
-```shell
+``` shell
 /?
 ```
 
 Infos sur le modèle
 
-```shell
+``` shell
 /show info
 ```
 
 Effacer le contexte
 
-```shell
+``` shell
 /clear
 ```
 
 Quitter la conversation
 
-```shell
+``` shell
 /bye
 ```
 
 ## Exercice
 
-- Tester le modèle pour différentes tâches
-- Chercher d'autres modèles sur la page des modèles de [ollama](https://ollama.com/search)
-- Durant le téléchargement, vous pouvez aller tester les autres alternatives:
-  - [There is an AI for that](https://theresanaiforthat.com/)
-  - [Duckduckgo AI](https://duckduckgo.com/)
-  - [HuggingFace Space](https://huggingface.co/spaces)
-- Tester les nouveaux modèles téléchargés
+-   Tester le modèle pour différentes tâches
+-   Chercher d'autres modèles sur la page des modèles de [ollama](https://ollama.com/search)
+-   Durant le téléchargement, vous pouvez aller tester les autres alternatives:
+    -   [There is an AI for that](https://theresanaiforthat.com/)
+    -   [Duckduckgo AI](https://duckduckgo.com/)
+    -   [HuggingFace Space](https://huggingface.co/spaces)
+-   Tester les nouveaux modèles téléchargés
 
 Exemple de tâche: question de culture générale, question mathématique, synonyme, formulation, etc.
 
@@ -919,8 +924,8 @@ Exemple de tâche: question de culture générale, question mathématique, synon
 
 Utilisons une interface utilisateur: **Page Assist**
 
-- [Chrome](https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo)
-- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/page-assist/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+-   [Chrome](https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo)
+-   [Firefox](https://addons.mozilla.org/en-US/firefox/addon/page-assist/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
 *Le lien chrome fonctionne aussi pour: Brave, Vivaldi, Edge et Opera*
 
@@ -932,11 +937,11 @@ Utilisons une interface utilisateur: **Page Assist**
 
 À faire:
 
-- Épingler Page Assist
-- Tester des conversations
-- Tester des modèles + Gestion des modèles (paramètres)
-- Exporter les chats
-- Naviguer dans les chats
+-   Épingler Page Assist
+-   Tester des conversations
+-   Tester des modèles + Gestion des modèles (paramètres)
+-   Exporter les chats
+-   Naviguer dans les chats
 
 ## Choisir ses modèle(s)
 
@@ -950,8 +955,8 @@ Taille de la VRAM
 
 [huggingface](https://huggingface.co/models)
 
-- Task: Text generation
-- Libraries: GGUF
+-   Task: Text generation
+-   Libraries: GGUF
 
 ## Quelques benchmarks
 
@@ -969,14 +974,14 @@ Le système prompt établit les règles et le cadre de l'interaction avec le mod
 
 **Structure d'un system prompt classique:**
 
-- **Définition du rôle**: Spécifie le domaine d'expertise (medecin, enseignant, etc.).
-- **Établissement de règles**: Définir les limites pour la protection des informations sensibles.
-- **Personnalisation du ton**: Style de communication (formel, amical, professionnel).
-- **Contextualisation**: Fournit le contexte basique pour toutes les réponses.
+-   **Définition du rôle**: Spécifie le domaine d'expertise (medecin, enseignant, etc.).
+-   **Établissement de règles**: Définir les limites pour la protection des informations sensibles.
+-   **Personnalisation du ton**: Style de communication (formel, amical, professionnel).
+-   **Contextualisation**: Fournit le contexte basique pour toutes les réponses.
 
 ## ChatGPT-4o system prompt {.scrollable}
 
-```markdown
+``` markdown
 You are ChatGPT, a large language model trained by OpenAI, based on the GPT-4 architecture.
 Knowledge cutoff: 2023-10
 Current date: 2024-07-10
@@ -1060,30 +1065,35 @@ Use ace_tools.display_dataframe_to_user(name: str, dataframe: pandas.DataFrame) 
  When making charts for the user: 1) never use seaborn, 2) give each chart its own distinct plot (no subplots), and 3) never set any specific colors – unless explicitly asked to by the user. 
  I REPEAT: when making charts for the user: 1) use matplotlib over seaborn, 2) give each chart its own distinct plot (no subplots), and 3) never, ever, specify colors or matplotlib styles – unless explicitly asked to by the user
 ```
+
 ## Technique de prompt
 
-- **Zero-shot**: Instruction simple
-- **One-shot**: Un exemple
-- **Few-shot**: Plusieurs exemples
-- **Chain-of-Thought** (CoT): Pousser le modèle à réfléchir
+-   **Zero-shot**: Instruction simple
+-   **One-shot**: Un exemple
+-   **Few-shot**: Plusieurs exemples
+-   **Chain-of-Thought** (CoT): Pousser le modèle à réfléchir
 
 ## Zero-shot Prompting {.scrollable}
 
-- **Description** : Cette méthode consiste à donner une instruction ou une tâche au modèle sans fournir d'exemples spécifiques. Le modèle s'appuie uniquement sur ses connaissances préexistantes acquises lors de son entraînement pour répondre.
-- **Avantages** : Rapide et efficace pour des tâches simples ou générales. Aucune donnée supplémentaire n'est nécessaire.
-- **Exemple** :
-  ```
-  Traduisez le texte suivant en français : "Good morning, how are you?"
-  ```
-  **Réponse attendue** : "Bonjour, comment allez-vous ?"
+-   **Description** : Cette méthode consiste à donner une instruction ou une tâche au modèle sans fournir d'exemples spécifiques. Le modèle s'appuie uniquement sur ses connaissances préexistantes acquises lors de son entraînement pour répondre.
+
+-   **Avantages** : Rapide et efficace pour des tâches simples ou générales. Aucune donnée supplémentaire n'est nécessaire.
+
+-   **Exemple** :
+
+    ```         
+    Traduisez le texte suivant en français : "Good morning, how are you?"
+    ```
+
+    **Réponse attendue** : "Bonjour, comment allez-vous ?"
 
 ## One-shot Prompting {.scrollable}
 
-- **Description** : Ici, un seul exemple est fourni avec l'instruction pour aider le modèle à mieux comprendre la tâche ou le format attendu.
-- **Avantage** : Utile lorsque le modèle a besoin d'un contexte minimal pour produire des réponses plus précises.
-- **Exemple** :
+-   **Description** : Ici, un seul exemple est fourni avec l'instruction pour aider le modèle à mieux comprendre la tâche ou le format attendu.
+-   **Avantage** : Utile lorsque le modèle a besoin d'un contexte minimal pour produire des réponses plus précises.
+-   **Exemple** :
 
-```
+```         
 Exemple :
 Anglais : I speak French
 Français : Je parle français
@@ -1097,11 +1107,11 @@ Français :
 
 ## Few-shot Prompting {.scrollable}
 
-- **Description** : Cette méthode implique de fournir plusieurs exemples dans le prompt pour guider le modèle. Cela permet de mieux contextualiser la tâche et d'améliorer la précision des réponses.
-- **Avantage** : Particulièrement efficace pour les tâches complexes ou spécifiques où des exemples multiples aident à établir un schéma clair.
-- **Exemple** :
-  
-```
+-   **Description** : Cette méthode implique de fournir plusieurs exemples dans le prompt pour guider le modèle. Cela permet de mieux contextualiser la tâche et d'améliorer la précision des réponses.
+-   **Avantage** : Particulièrement efficace pour les tâches complexes ou spécifiques où des exemples multiples aident à établir un schéma clair.
+-   **Exemple** :
+
+```         
 Exemple 1 :
 Anglais : I speak French
 Français : Je parle français
@@ -1119,11 +1129,11 @@ Français :
 
 ## Chain-of-Thought (CoT) Prompting {.scrollable}
 
-- **Description** : Cette technique demande au modèle de décomposer une tâche complexe en étapes logiques successives. Cela améliore la capacité du modèle à raisonner et à fournir des réponses claires et détaillées.
-- **Avantage** : Idéal pour les problèmes nécessitant plusieurs étapes de raisonnement ou une explication détaillée. Cela rend également les réponses plus interprétables.
-- **Exemple** (résolution de problème mathématique) :
+-   **Description** : Cette technique demande au modèle de décomposer une tâche complexe en étapes logiques successives. Cela améliore la capacité du modèle à raisonner et à fournir des réponses claires et détaillées.
+-   **Avantage** : Idéal pour les problèmes nécessitant plusieurs étapes de raisonnement ou une explication détaillée. Cela rend également les réponses plus interprétables.
+-   **Exemple** (résolution de problème mathématique) :
 
-```
+```         
 Combien font (3 + 5) × 2 ?
   
 Étapes :
@@ -1135,21 +1145,21 @@ Réponse finale :
 
 **Réponse attendue** :
 
-  - Étape 1 : $$3 + 5 = 8$$
-  - Étape 2 : $$8 \times 2 = 16$$
-  - Réponse finale : $$16$$
+-   Étape 1 : $$3 + 5 = 8$$
+-   Étape 2 : $$8 \times 2 = 16$$
+-   Réponse finale : $$16$$
 
 ## Des idées de prompt
 
-- [The Big Prompt Library](https://github.com/0xeb/TheBigPromptLibrary) list une grande variété de promptes utile
-- [Prompte pour le raisonnement](https://gist.github.com/Maharshi-Pandya/4aeccbe1dbaa7f89c182bd65d2764203) un supper prompte pour simuler un raisonnement dans des modèles sans raisonnements.
+-   [The Big Prompt Library](https://github.com/0xeb/TheBigPromptLibrary) list une grande variété de promptes utile
+-   [Prompte pour le raisonnement](https://gist.github.com/Maharshi-Pandya/4aeccbe1dbaa7f89c182bd65d2764203) un supper prompte pour simuler un raisonnement dans des modèles sans raisonnements.
 
 **Raisonnement**: Pousse le modèle à réfléchir (générer du texte) avant de répondre. Cela s'appelle du **Chain of thought** (CoT).
 
 Modèle faisant du raisonnement:
 
-- [smallthinker](https://ollama.com/library/smallthinker)
-- [deepseek-r1](https://ollama.com/library/deepseek-r1)
+-   [smallthinker](https://ollama.com/library/smallthinker)
+-   [deepseek-r1](https://ollama.com/library/deepseek-r1)
 
 ## Créer ses applications
 
@@ -1157,25 +1167,25 @@ Pour éviter d'écrire des promptes (message) systématiquement, créer des syst
 
 **Nous allons faire un exemple de dictionnaire des synonymes:**
 
-- **But:** Lorsque nous écrivons un mot, le modèle nous renvoie une liste de synonymes
-- **Utilité:** Évite de devoir réécrire le prompt à chaque fois
+-   **But:** Lorsque nous écrivons un mot, le modèle nous renvoie une liste de synonymes
+-   **Utilité:** Évite de devoir réécrire le prompt à chaque fois
 
 ## Astuces pour les prompts
 
-1. Les llms sont des acteurs: **Donner un rôle aide à accomplir le travail**
-2. Les llms sont des prédicteurs de tokens: **Le contexte a une grande importance**
-3. Les llms manquent de sens commun: **Soyez précis dans votre demande**
-4. Les llms savent recopier les structures: **Donnez des exemples concrets**
-5. Les llms modernes ont un grand contexte: **N'hésitez pas à créer de longs prompts détaillés**
-6. Les llms sont bons pour repérer les structures: **Utilisez des caractères spéciaux comme `{}` pour améliorer la structure**
-7. Les llms donneront toujours une réponse même lorsqu'ils ne savent pas: **Donnez des instructions lorsque le modèle ne sait pas**
+1.  Les llms sont des acteurs: **Donner un rôle aide à accomplir le travail**
+2.  Les llms sont des prédicteurs de tokens: **Le contexte a une grande importance**
+3.  Les llms manquent de sens commun: **Soyez précis dans votre demande**
+4.  Les llms savent recopier les structures: **Donnez des exemples concrets**
+5.  Les llms modernes ont un grand contexte: **N'hésitez pas à créer de longs prompts détaillés**
+6.  Les llms sont bons pour repérer les structures: **Utilisez des caractères spéciaux comme `{}` pour améliorer la structure**
+7.  Les llms donneront toujours une réponse même lorsqu'ils ne savent pas: **Donnez des instructions lorsque le modèle ne sait pas**
 
 ## Exercices
 
-- Créer une application de correction de texte et de syntaxe
-- Créer une application de traduction
-- Créer une application pour répondre aux emails (modèle)
-- Trouver d'autres idées d'applications
+-   Créer une application de correction de texte et de syntaxe
+-   Créer une application de traduction
+-   Créer une application pour répondre aux emails (modèle)
+-   Trouver d'autres idées d'applications
 
 ## RAG
 
@@ -1185,13 +1195,13 @@ Pour éviter d'écrire des promptes (message) systématiquement, créer des syst
 
 **Document local:**
 
-- Paramètre: Gérer les connaissances
+-   Paramètre: Gérer les connaissances
 
 **Internet:**
 
-- Dans la conversation
+-   Dans la conversation
 
-- Barre latérale (Ctrl+Maj+Y)
+-   Barre latérale (Ctrl+Maj+Y)
 
 ## Dans ce cours nous avons vu...
 
