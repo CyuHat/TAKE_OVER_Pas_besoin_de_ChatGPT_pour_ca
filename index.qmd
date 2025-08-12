@@ -52,7 +52,7 @@ editor: visual
 -   Que pensez-vous de l'IA?
 -   Pourquoi avoir choisi ce cours?
 
-## Pour ce cours
+## Pour ce cours![](images/clipboard-1227717430.png)
 
 ::: callout-note
 Pour le bon déroulement du cours, sachez que:
